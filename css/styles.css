@@ -5,14 +5,20 @@
 }
 body{
     font-family: "noto", sans-serif;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.2;
+letter-spacing: 3%;
+
 }
 h1,h2,h3 {
     color: var(--brand-color);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Alumni Sans Collegiate One", sans-serif;
+    text-transform: uppercase;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 60px;
     line-height: 100%;
-   letter-spacing:3.5%;
+   letter-spacing:2.2%;
     text-align: center;
     }
     .list{
@@ -21,3 +27,17 @@ h1,h2,h3 {
     .link{
         text-decoration: none;
     }
+    .link:hover,:focus{
+        color:var(--second-brand-color);
+        background-color: var(--brand-color);
+    }
+    .hero-slogan{
+        font-family: "Faster One" , sans-serif;
+    }
+   .hero-text{
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 100%;
+   letter-spacing:2%;
+    text-align: center;
+}
