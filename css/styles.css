@@ -5,6 +5,7 @@
 }
 body{
     font-family: "noto", sans-serif;
+    color: #555555;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.2;
@@ -26,11 +27,13 @@ h1,h2,h3 {
     }
     .link{
         text-decoration: none;
+        color: inherit;
     }
     .link:hover,:focus{
         color:var(--second-brand-color);
         background-color: var(--brand-color);
     }
+    /*________________________sezione Hero________________*/
     .hero-slogan{
         font-family: "Faster One" , sans-serif;
     }
@@ -40,4 +43,61 @@ h1,h2,h3 {
     line-height: 100%;
    letter-spacing:2%;
     text-align: center;
+}
+/* _____________________________sezione squadre_____________*/
+.list-squadre{
+    font-family: "Faster One" , sans-serif;
+    font-size: 40px;
+    line-height: 100%;
+   letter-spacing:2.2%;
+    
+}
+/* _____________________________pagina chi siamo_____________*/
+.portret{
+    color: var(--brand-color);
+    font-family: "Faster One" , sans-serif;
+    font-size: 22px;
+    line-height: 100%;
+   letter-spacing:2.2%;
+}
+/* _____________________________pagina eventi_____________*/
+.text-eventi{
+    color: var(--brand-color);
+    font-family: "Faster One" , sans-serif;
+    font-size: 40px;
+    line-height: 100%;
+   letter-spacing:2.2%;
+}
+.list-eventi{
+    color: var(--brand-color);
+    font-family: "Faster One" , sans-serif;
+    font-size: 22px;
+    line-height: 100%;
+   letter-spacing:2.2%;
+}
+/* _____________________________pagina palestre e orari_____________*/
+.text-palestre{
+    font-size: 40px;
+    line-height: 100%;
+   letter-spacing:2.2%;
+}
+/* _____________________________pagina contatti_____________*/
+.text-contatti{
+    font-size: 30px;
+    line-height: 100%;
+   letter-spacing:2.2%;
+}
+/* _____________________________tabella_____________*/
+.tabella-body > tr:hover {
+  background-color:var(--brand-color);
+  color: white;
+}
+.tabella {
+  border-collapse: collapse;
+}
+
+.tabella th,
+.tabella td {
+  padding: 8px;
+  border: 1px solid #212121;
 }
