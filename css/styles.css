@@ -48,9 +48,35 @@ h1,h2,h3 {
     .header{
         display: inline-block;
         display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
     .header-up{
         display: flex;
+        justify-content: flex-end;
+        border-bottom:solid 2px var(--brand-color) ;
+    }
+    .header-down{
+         border-bottom:solid 2px var(--brand-color) ;
+
+    }
+    .header-nav{
+       
+
+        font-size: 18px;
+
+    }
+    .nav-link{
+        display: block;
+        padding: 15px;
+
+        
+    }
+    .nav-item{
+       
+    }
+    .nav-item:not(:last-child){
+        margin-left: 25px;
     }
     .text-header{
         padding-bottom: 10px;
@@ -71,6 +97,16 @@ h1,h2,h3 {
     }
     .nav-items{
         display: flex;
+       
+    }
+    .nav-teams{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top:solid 2px var(--brand-color) ;
+    }
+    .nav-teams:not(:last-child){
+        margin-left: 25px;
     }
     /*________________________sezione Hero________________*/
     .hero-slogan{
