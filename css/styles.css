@@ -45,6 +45,7 @@ h1,h2,h3 {
         margin: 0 auto;
         padding: 0 15px;
     }
+    /*---------------------------header----------------------*/
     .header{
         display: inline-block;
         display: flex;
@@ -69,11 +70,13 @@ h1,h2,h3 {
     .nav-link{
         display: block;
         padding: 15px;
-
+border-radius: 25px;
         
     }
     .nav-item{
-       
+       margin-top: 5px;
+       margin-bottom: 5px;
+      
     }
     .nav-item:not(:last-child){
         margin-left: 25px;
@@ -109,17 +112,60 @@ h1,h2,h3 {
         margin-left: 25px;
     }
     /*________________________sezione Hero________________*/
+    .hero{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: 600px;
+    }
+    .hero-title{
+        margin-bottom: 60px;
+    }
     .hero-slogan{
+        width: 50%;
         font-family: "Faster One" , sans-serif;
         font-size: 60px;
+        margin-bottom: 60px;
+         margin-left: auto;
+         margin-right: auto;
     }
    .hero-text{
+    width: 50%;
     font-weight: 400;
     font-size: 23px;
     line-height: 100%;
    letter-spacing:2%;
-    text-align: center;
+
 }
+/*---------------------------news----------------------*/
+.news{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.title-diretta{
+    margin-bottom: 60px;
+}
+.title-facebook{
+    margin-bottom: 60px;
+}
+.title-magazine{
+    margin-bottom: 60px;
+}
+/*---------------------------sponsor----------------------*/
+.partners{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.partners-title{
+    margin-bottom: 60px;
+}
+.partners-list{
+display: flex;
+flex-wrap:wrap ;
+}
+.pernter-link{
+    display: block;
+}
+
 /* _____________________________sezione squadre_____________*/
 .list-squadre{
     font-family: "Faster One" , sans-serif;
