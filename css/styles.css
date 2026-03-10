@@ -161,18 +161,58 @@ border-radius: 25px;
 .partners-list{
 display: flex;
 flex-wrap:wrap ;
+justify-content:space-between ;
 }
 .pernter-link{
     display: block;
 }
-
+.partner-item{
+    margin-bottom: 40px;
+}
 /* _____________________________sezione squadre_____________*/
 .list-squadre{
     font-family: "Faster One" , sans-serif;
     font-size: 40px;
     line-height: 100%;
    letter-spacing:2.2%;
+
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     
+}
+.teams-title{
+    margin-bottom: 60px;
+}
+
+.squadra{
+    width: 500px;
+    justify-items: center;
+     margin-bottom: 40px;
+}
+/* ----------------------------------prossime partite---------------*/
+.games-title{
+    margin-bottom: 60px;
+}
+.list-games{
+display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.game{
+    margin-bottom: 40px;
+}
+/*------------------------------galleria-------------------*/
+.galleria-title{
+    margin-bottom: 60px;
+}
+.galleria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.foto{
+    margin-bottom: 40px;
 }
 /* _____________________________pagina chi siamo_____________*/
 .portret{
