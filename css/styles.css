@@ -12,11 +12,11 @@ line-height: 1.2;
 letter-spacing: 3%;
 
 }
-ul, p, h1,h2,h3{
+ul, p, h1,h2,h3,h4{
     margin: 0;
     padding: 0;
 }
-h1,h2,h3 {
+h1,h2,h3,h4 {
     color: var(--brand-color);
     font-family: "Alumni Sans Collegiate One", sans-serif;
     text-transform: uppercase;
@@ -25,6 +25,10 @@ h1,h2,h3 {
     line-height: 100%;
    letter-spacing:2.2%;
     text-align: center;
+    margin-bottom: 40px;
+    }
+    figure{
+        margin: 0;
     }
     .list{
         list-style: none;
@@ -43,7 +47,7 @@ h1,h2,h3 {
         
         width: 1220px;
         margin: 0 auto;
-        padding: 0 15px;
+        padding: 15px;
     }
     /*---------------------------header----------------------*/
     .header{
@@ -162,9 +166,7 @@ margin-left: auto;
         padding-bottom: 20px;
         height: 600px;
     }
-    .hero-title{
-        margin-bottom: 60px;
-    }
+   
     .hero-slogan{
         width: 50%;
         font-family: "Faster One" , sans-serif;
@@ -186,23 +188,13 @@ margin-left: auto;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.title-diretta{
-    margin-bottom: 60px;
-}
-.title-facebook{
-    margin-bottom: 60px;
-}
-.title-magazine{
-    margin-bottom: 60px;
-}
+
 /*---------------------------sponsor----------------------*/
 .partners{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.partners-title{
-    margin-bottom: 60px;
-}
+
 .partners-list{
 display: flex;
 flex-wrap:wrap ;
@@ -226,9 +218,7 @@ justify-content:space-between ;
     justify-content: space-around;
     
 }
-.teams-title{
-    margin-bottom: 60px;
-}
+
 
 .squadra{
     width: 500px;
@@ -243,11 +233,7 @@ justify-content:space-between ;
 .partite-div{
     background-color: rgba(255, 255, 255, 0.8);
 }
-.games-title{
-    margin-bottom: 60px;
 
-    
-}
 .list-games{
 display: flex;
     flex-wrap: wrap;
@@ -269,12 +255,62 @@ display: flex;
     margin-bottom: 40px;
 }
 /* _____________________________pagina chi siamo_____________*/
+.aboutus-section{
+    display: block;
+    display: flex;
+    align-items: center;
+}
+.aboutus-text{
+    width: 50%;
+    
+}
+.aboutus-text p{
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+.direttivo-list{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.direttivo-staf{
+font-size: medium;
+font-family:"Faster One" , 'Arial Narrow', Arial, sans-serif;
+color: var(--brand-color);
+    font-family: "Faster One" , sans-serif;
+    font-size: 30px;
+    line-height: 100%;
+   letter-spacing:2.2%;
+   border: solid,var(--brand-color);
+    padding: 20px;
+    width: 380px;
+    margin-bottom: 15px;
+}
+
 .portret{
     color: var(--brand-color);
     font-family: "Faster One" , sans-serif;
     font-size: 22px;
     line-height: 100%;
    letter-spacing:2.2%;
+
+
+}
+.list-gioccatore{
+   display: flex;
+   flex-wrap: wrap;
+justify-content: space-between;
+}
+.schieda-gioccatore{
+    width: 380px;
+    margin-bottom: 15px;
+}
+.text-saveguard{
+    font-size: 30px;
+    width: 800px;
+    margin-bottom: 20px;
 }
 /* _____________________________pagina eventi_____________*/
 .text-eventi{

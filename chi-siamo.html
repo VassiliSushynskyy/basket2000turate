@@ -3,179 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>A.S.D. BASKET 2000 TURATE</title>
     <link href="https://db.onlinewebfonts.com/c/70927e11d1779ee1fa9a6b97278c01c1?family=Brush+Script+MT" rel="stylesheet">
     <link href="https://db.onlinewebfonts.com/c/2967a3c5ee426de27b245bcbc22ab82f?family=Noto+Sans+V2" rel="stylesheet">
     <link href="https://db.onlinewebfonts.com/c/771d2d395300ea1b80c34ba5282bf694?family=Impact" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@0;1&family=Faster+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v25.0&appId=APP_ID"></script>
     <!--_______________________________________Header___________________________-->
 
     <header>
-        <a class="link" href="./index.html">
-          <img src="./imgs/logo.jpg" alt="logo" width="70" height="70"> 
+        <div class="container header">
+            <a class="link logo-header" href="./index.html">
+          <img src="./imgs/logo.jpg" alt="logo" width="90" height="90"> 
         </a>
-        <p >Seguici</p>
-        <ul class="list">
-            <li>
-                <a class="link" href="https://www.instagram.com/basket2000turate/" target="_blank" rel="noreferrer noopener">
+        <div class="headers-sections">
+            <div class="header-up">
+                <p class="text-header">Seguici</p>
+        <ul class="list socials-header">
+            <li class="social">
+                <a class="link social-link" href="https://www.instagram.com/basket2000turate/" target="_blank" rel="noreferrer noopener">
                 <img src="./svg/instagram-2016-logo-svgrepo-com.svg" alt="instagram" width="20" height="20">
                 </a>
             </li>
-            <li>
-                <a class="link" href="https://www.youtube.com/@BasketTurate" target="_blank" rel="noreferrer noopener"> 
+            <li class="social">
+                <a class="link social-link" href="https://www.youtube.com/@BasketTurate" target="_blank" rel="noreferrer noopener"> 
                    <img src="./svg/youtube-svgrepo-com.svg" alt="youtube" width="20" height="20">
                 </a>
             </li>
-             <li>
-                <a class="link" href=https://www.facebook.com/basket2000turate target="_blank" rel="noreferrer noopener">
+             <li class="social">
+                <a class="link social-link" href=https://www.facebook.com/basket2000turate target="_blank" rel="noreferrer noopener">
                    <img src="./svg/facebook-3-logo-svgrepo-com.svg" alt="facebook" width="20" height="20">
                 </a>
             </li>
         </ul>
-        <nav>
-          <ul class="list">
-            <li><a class="link" href="./index.html">HOME</a></li>
-            <li><a class="link" href="./chi-siamo.html">Chi siamo</a></li>
-            <li><a class="link" href="#squadre">Squadre</a>
-                <ul class="list">
-                <li><a class="link" href="./pulcini.html">Pulcini</a></li>
-                <li><a class="link" href="./scoiattoli.html">Scoiattoli</a></li>
-                <li><a class="link" href="./aquilotti.html">Aquilotti</a></li>
-                <li><a class="link" href="./under13.html">Under 13</a></li>
-                <li><a class="link" href="./under15.html">Under 15</a></li>
-                <li><a class="link" href="./under17.html">Under 17</a></li>
-                <li><a class="link" href="./dr3.html">DR3</a></li>
-            </ul></li>
-            <li><a class="link" href="./eventi.html">Eventi</a></li>
-            <li><a class="link" href="./palestre-e-orari.html">Palestre e Orari</a></li>
-            <li><a class="link" href="./risultati.html">Risultati</a></li>
-            <li><a class="link" href="./contatti.html">Contatti</a></li>
+            </div>
+            <div class="header-down">
+                <nav class="header-nav">
+          <ul class="list nav-items">
+            <li class="nav-item"><a class="link nav-link" href="./index.html">HOME</a></li>
+            <li class="nav-item"><a class="link nav-link" href="./chi-siamo.html">Chi siamo</a></li>
+            <li class="nav-item"><a class="link nav-link" href="./index.html#squadre">Squadre</a></li>
+            <li class="nav-item"><a class="link nav-link" href="./eventi.html">Eventi</a></li>
+            <li class="nav-item"><a class="link nav-link" href="./palestre-e-orari.html">Palestre e Orari</a></li>
+            <li class="nav-item"><a class="link nav-link" href="./risultati.html">Calendari/Risultati</a></li>
+            <li class="nav-item"><a class="link nav-link" href="./contatti.html">Contatti</a></li>
           </ul>
+           <ul class="list nav-teams">
+                <li class="nav-item"><a class="link nav-link" href="./pulcini.html">Pulcini</a></li>
+                <li class="nav-item"><a class="link nav-link" href="./scoiattoli.html">Scoiattoli</a></li>
+                <li class="nav-item"><a class="link nav-link" href="./aquilotti.html">Aquilotti</a></li>
+                <li class="nav-item"><a class="link nav-link" href="./under13.html">Under 13</a></li>
+                <li class="nav-item"><a class="link nav-link" href="./under15.html">Under 15</a></li>
+                <li class="nav-item"><a class="link nav-link" href="./under17.html">Under 17</a></li>
+                <li class="nav-item"><a class="link nav-link" href="./dr3.html">DR3</a></li>
+            </ul>
         </nav>
+
+            </div>
+        </div>
+                <a class="link" href="./index.html">
+          <img src="./imgs/logo2.jpeg" alt="logo" width="90" height="90"> 
+        </a>
+        </div>
         </header>
         <main>
             <section>
-                <h2>CHI SIAMO</h2>
-                <h3 class="hero-slogan">IL NOSTRO MANIFESTO</h3>
-                <h4>ALLENIAMO IL FUTURO</h4>
-                <p>In Basket2000Turate crediamo che il basket sia molto più di un gioco: è un percorso di crescita personale, un modo per imparare il rispetto, la collaborazione e la fiducia.</p>
+               <div class="container">
+                 <h2>CHI SIAMO</h2>
+                <h3 >IL NOSTRO MANIFESTO</h3>
+                <h4 class="hero-slogan">ALLENIAMO IL FUTURO</h4>
+               <div class="aboutus-section">
+                <div class="aboutus-text">
+                 <p>In Basket2000Turate crediamo che il basket sia molto più di un gioco: è un percorso di crescita personale, un modo per imparare il rispetto, la collaborazione e la fiducia.</p>
                 <p>Ogni allenamento è un’occasione per mettersi in gioco, sbagliare, riprovare e migliorare – insieme.
 Per noi contano le persone prima dei risultati, i sorrisi prima dei punti.</p>
 <p><strong>Perché formare piccoli atleti significa formare grandi persone.</strong></p>
-                <img src="./imgs/back.jpg" alt="squadra di basket" width="430">
+                </div>
+                <img src="./imgs/back.jpg" alt="squadra di basket" width="600">
+              </div>
+               </div>
             </section>
             <!--_____________________________ sezione staff_______________________________________________-->
-            <section>
-                <h2>
-                    Il Nostro Staff
-                </h2>
-               <ul class="list">
-                <li>
+            <section >
+                <div class="container">
+                    <h2>CONSIGLIO DIRETTIVO</h2>
+                <ul class="list direttivo-list">
+                    <li class="direttivo-staf">Presidente: Claudio Pagani</li>
+                    <li class="direttivo-staf">Vice Presidente: Oscar Uboldi</li>
+                    <li class="direttivo-staf">Segretaria: Daniela Colmegna</li>
+                    <li class="direttivo-staf">Consigliere: Massimiliano Mazzoleni </li>
+                    <li class="direttivo-staf">Consigliere: Carmine Cannas</li>
+                    <li class="direttivo-staf">Consigliere: Stefano Lilliu</li>
+                    <li class="direttivo-staf">Consigliere: Filippo Mognoni </li>
+                    <li class="direttivo-staf">Consigliere: Claudio Vivenzio</li>
+                    <li class="direttivo-staf">Consigliere: Simona Francavilla</li>
+                </ul>
+                <h2>STAFF TECNICO</h2>
+               <ul class="list list-gioccatore">
+                <li class="schieda-gioccatore">
                     <figure class="portret">
-                      <img src="./imgs/pulcini/Diacci-Franco.jpg" alt="Diaci Franco Allenatore di Pulcini Scoiattoli e Aquilotti" width="270" >
+                      <img src="./imgs/pulcini/Diacci-Franco.jpg" alt="Diaci Franco Allenatore di Pulcini Scoiattoli e Aquilotti" width="380" >
                              <figcaption>Diacci Franco Istruttore di Pulcini Scoiattoli e Aquilotti</figcaption>
                    </figure>
                </li>
-                <li><figure class="portret">
-                      <img src="./imgs/under13/Robbiani-Alessandro-coach.jpg" alt="Robbiani Alessandro Coach di Under 13" width="270" >
+                <li class="schieda-gioccatore"><figure class="portret">
+                      <img src="./imgs/under13/Robbiani-Alessandro-coach.jpg" alt="Robbiani Alessandro Coach di Under 13" width="380" >
                              <figcaption>Robbiani Alessandro Coach di Under 13</figcaption>
                    </figure></li>
-                <li><figure class="portret">
-                      <img src="./imgs/under13/Pagani-Alessia-assistente.jpg" alt="Pagani Alessia assistente" width="270" >
+                <li class="schieda-gioccatore"><figure class="portret">
+                      <img src="./imgs/under13/Pagani-Alessia-assistente.jpg" alt="Pagani Alessia assistente" width="380" >
                              <figcaption>Pagani Alessia assistente Under 13</figcaption>
                    </figure></li>
-                <li><figure class="portret">
-                      <img src="./imgs/under15/Tosetti-Fabrizio-coach.jpg" alt="Tosetti Fabrizio coach Under 15" width="270" >
+                <li class="schieda-gioccatore"><figure class="portret">
+                      <img src="./imgs/under15/Tosetti-Fabrizio-coach.jpg" alt="Tosetti Fabrizio coach Under 15" width="380" >
                              <figcaption>Tosetti Fabrizio Coach di Under 15</figcaption>
                    </figure></li>
-                <li><figure class="portret">
-                      <img src="./imgs/under17/Pagani-Samuele-coach.jpg" alt="Pagani Samuele coach di under 17" width="270" >
+                <li class="schieda-gioccatore"><figure class="portret">
+                      <img src="./imgs/under17/Pagani-Samuele-coach.jpg" alt="Pagani Samuele coach di under 17" width="380" >
                              <figcaption>Pagani Samuele Coach di Under 17</figcaption>
                    </figure></li>
-                   <li><figure class="portret">
-                      <img src="./imgs/dr3/Carughi-Carlo-coach.jpg" alt="Carughi Carlo Coach di DR3" width="270" >
+                   <li class="schieda-gioccatore"><figure class="portret">
+                      <img src="./imgs/dr3/Carughi-Carlo-coach.jpg" alt="Carughi Carlo Coach di DR3" width="380" >
                              <figcaption>Carughi Carlo Coach di DR3</figcaption>
                    </figure></li>
                </ul>
+                </div>
             </section>
             <!--_____________________________ sezione safeguarding_______________________________________________-->
             <section>
-                <h2>saveguard</h2>
+                <div class="container">
+                    <h2>saveguard</h2>
                 <ul class="list">
                     <li>
                         <h3>CODICE DI CONDOTTA</h3>
-                        <p>Basket 2000 Turate, nella sua attività sportivo-educativa, si attiene a un dettagliato Codice di condotta che impegna gli istruttori, i tecnici, i dirigenti e tutti i collaboratori.</p>
-                        <p>Con questo strumento vincolante la società mira a garantire un ambiente sicuro, rispettoso e inclusivo per tutti i tesserati.</p>
+                        <p class="text-saveguard">Basket 2000 Turate, nella sua attività sportivo-educativa, si attiene a un dettagliato Codice di condotta che impegna gli istruttori, i tecnici, i dirigenti e tutti i collaboratori.</p>
+                        <p class="text-saveguard">Con questo strumento vincolante la società mira a garantire un ambiente sicuro, rispettoso e inclusivo per tutti i tesserati.</p>
                     <iframe src="./docs/MAGAZINE11-mariano.pdf"
-                            width="100%" 
-                            height="600px" 
+                            width="1200" 
+                            height="600" 
                             style="border: none;"></iframe>.
                     </li>
                     <li>
                         <h3>SAFEGUARDING</h3>
-                        <p>si è dotata di un modello organizzativo e di controllo dell’attività sportiva basato sulle linee guida della Federazione Italiana Pallacanestro riconosciute dal CONI.</p>
-                        <p>Questo modulo di Safeguarding individua adeguate misure e procedure per ridurre i rischi di condotte lesive dei diritti, specie nei confronti dei tesserati minori.</p>
+                        <p class="text-saveguard">si è dotata di un modello organizzativo e di controllo dell’attività sportiva basato sulle linee guida della Federazione Italiana Pallacanestro riconosciute dal CONI.</p>
+                        <p class="text-saveguard">Questo modulo di Safeguarding individua adeguate misure e procedure per ridurre i rischi di condotte lesive dei diritti, specie nei confronti dei tesserati minori.</p>
                     <iframe 
-                            src="./docs/SAFEGUARDING.pdf?embedded=true" 
-                            width="100%" 
-                            height="600px" 
-                            style="border: none;">
-                        <p>Il tuo browser non supporta la visualizzazione del PDF.<a href="">Scarica</a>.</p>
+                            src="./docs/SAFEGUARDING.pdf?embedded=true"
+                            width="1200" 
+                            height="600" 
+                            style="border: none;" >
+                           
                     </iframe>
                     </li>
                 </ul>
+                </div>
             </section>
         </main>
         <!--_____________________________ sezione footer_______________________________________________-->
-         <footer>
-        <a href="./index.html">
+         <footer class="footer-section">
+       <div class="container footer">
+         <a class="link logo-footer" href="./index.html">
           <img src="./imgs/logo.jpg" alt="logo" width="70" height="70"> 
         </a>
-        <nav>
-          <ul>
-            <li><a href="./chi-siamo.html">Chi siamo</a></li>
-            <li><a href="#squadre">Squadre</a><ul>
-                <li><a href="./pulcini.html">Pulcini</a></li>
-                <li><a href="./scoiattoli.html">Scoiattoli</a></li>
-                <li><a href="./aquilotti.html">Aquilotti</a></li>
-                <li><a href="./under13.html">Under 13</a></li>
-                <li><a href="./under15.html">Under 15</a></li>
-                <li><a href="./under17.html">Under 17</a></li>
-                <li><a href="./dr3.html">DR3</a></li>
-            </ul></li>
-            <li><a href="./eventi.html">Eventi</a></li>
-            <li><a href="./palestre-e-orari.html">Palestre e Orari</a></li>
-            <li><a href="./risultati.html">Risultati</a></li>
-            <li><a href="">Safe Guarding</a></li>
-            <li><a href="./contatti.html">Contatti</a></li>
+        <div class="footer-sections">
+        <nav >
+          <ul class="list nav-items">
+            <li class="nav-item"><a class="link nav-link" href="./index.html">Torna su </a></li>
+            <li class="nav-item"><a class="link nav-link" href="./chi-siamo.html">Chi siamo</a></li>
+            <li class="nav-item"><a class="link nav-link" href="./index.html#squadre">Squadre</a></li>
+            <li class="nav-item"><a class="link nav-link" href="./eventi.html">Eventi</a></li>
+            <li class="nav-item"><a class="link nav-link" href="./palestre-e-orari.html">Palestre e Orari</a></li>
+            <li class="nav-item"><a class="link nav-link" href="./risultati.html">Calendari/Risultati</a></li>
+            <li class="nav-item"><a class="link nav-link" href="./contatti.html">Contatti</a></li>
           </ul>
         </nav>
-        <address>Via San Maurizio 10, Turate 22078</address>
-        <p >Seguici</p>
-        <ul>
-            <li>
-                <a href="https://www.instagram.com/basket2000turate/" target="_blank" rel="noreferrer noopener">
+        <div class="footer-info">
+            <address>Via San Maurizio 10, Turate 22078</address>
+        <p class="text-header">Seguici</p>
+        <ul class="list footer-social">
+            <li class="social">
+                <a class="link social-link" href="https://www.instagram.com/basket2000turate/" target="_blank" rel="noreferrer noopener">
                 <img src="./svg/instagram-2016-logo-svgrepo-com.svg" alt="instagram" width="20" height="20">
                 </a>
             </li>
-            <li>
-                <a href="https://www.youtube.com/@BasketTurate" target="_blank" rel="noreferrer noopener"> 
-                   <img src="./svg/youtube-svgrepo-com.svg" alt="youtube" width="20" height="20">
+            <li class="social">
+                <a class="link social-link" href="https://www.youtube.com/@BasketTurate" target="_blank" rel="noreferrer noopener"> 
+                   <img src="./svg/youtube-svgrepo-com.png" alt="youtube" width="20" height="20">
                 </a>
             </li>
-             <li>
-                <a href=https://www.facebook.com/basket2000turate target="_blank" rel="noreferrer noopener">
+             <li class="social">
+                <a class="link social-link" href=https://www.facebook.com/basket2000turate target="_blank" rel="noreferrer noopener">
                    <img src="./svg/facebook-3-logo-svgrepo-com.svg" alt="facebook" width="20" height="20">
                 </a>
             </li>
             </ul>
-<p>partita iva copirait ecc</p>
-<p>creato MaDaLu Sushy</p>
+
+        </div>
+        <div class="copyriht-section">
+    <p>partita iva:95049190135</p>
+    <p>Copyright © 2026 A.S.D. BASKET 2000 TURATE</p>
+    <p class="creatore">creato MaDaLu Sushy</p>
+</div>
+</div>
+<a class="link" href="./index.html">
+          <img src="./imgs/logo2.jpeg" alt="logo" width="70" height="70"> 
+        </a>
+       </div>
            </footer>
     
 </body>
