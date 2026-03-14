@@ -378,3 +378,18 @@ caption{
   padding: 8px;
   border: 1px solid #212121;
 }
+.div-btn{
+    text-align: center;
+}
+.classifica-btn{
+    padding: 20px;
+    margin: 20px;
+    border: solid black;
+    border-radius: 50px;
+    background-color: var(--brand-color);
+    color: var(--second-brand-color);
+}
+.classifica-btn:hover,:focus{
+background-color:var(--second-brand-color);
+    color:var(--brand-color);
+}
