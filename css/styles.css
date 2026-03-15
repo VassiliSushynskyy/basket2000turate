@@ -355,6 +355,15 @@ justify-content: space-between;
 
    width: 800px;
 }
+.contact-link{
+    
+    padding: 200,400;
+}
+.contact-list{
+display: block;
+display: flex;
+flex-wrap: wrap;
+}
 /* _____________________________tabella_____________*/
 .tabella-body > tr:hover {
   background-color:var(--brand-color);
