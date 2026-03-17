@@ -340,6 +340,8 @@ justify-content: space-between;
 }
 .img-eventi{
     margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
 }
 /* _____________________________pagina palestre e orari_____________*/
 .text-palestre{
