@@ -26,12 +26,16 @@ h1,h2,h3,h4 {
    letter-spacing:2.2%;
     text-align: center;
     margin-bottom: 40px;
+    
     }
     figure{
         margin: 0;
+       
     }
     img{
         display: block;
+         border-radius: 10px;
+        overflow: hidden;
     }
     .list{
         list-style: none;
@@ -39,6 +43,7 @@ h1,h2,h3,h4 {
     .link{
         text-decoration: none;
         color: inherit;
+        
     }
     .link:hover,:focus{
         color:var(--second-brand-color);
@@ -104,6 +109,10 @@ border-radius: 25px;
         display: block;
         padding-bottom: 10px;
         padding-top: 10px;
+        border-radius: 0px;
+    }
+    .social-img{
+        border-radius: 0px;
     }
     .nav-items{
         display: flex;
@@ -167,7 +176,22 @@ margin-left: auto;
     .hero{
         padding-top: 20px;
         padding-bottom: 20px;
-        height: 600px;
+        height: 900px;
+
+        
+        background-color:var(--brand-color);
+        
+        background-image: url(../imgs/back.jpg);
+ 
+        background-position: center;
+        background-size: cover;
+        
+    }
+    .hero > .container{
+       height: inherit;
+    }
+    .hero-title{
+        text-shadow: 3px -5px 0px rgba(241,232,232,1), 3px 9px 0px rgba(241,232,232,1);
     }
    
     .hero-slogan{
@@ -177,37 +201,58 @@ margin-left: auto;
         margin-bottom: 60px;
          margin-left: auto;
          margin-right: auto;
+
+         color: var(--second-brand-color);
+
     }
    .hero-text{
+
     width: 50%;
-    font-weight: 400;
-    font-size: 23px;
+    font-weight: 600;
+    font-size: 35px;
     line-height: 100%;
    letter-spacing:2%;
+
+   color: #3e643a;
+background-color: rgba(241,232,232,0.6);
+border-radius: 25px;
+padding: 10px;
 
 }
 /*---------------------------news----------------------*/
 .news{
     padding-top: 20px;
     padding-bottom: 20px;
+    background-image: url(../imgs/sfondo4.jpeg);
 }
 
 /*---------------------------sponsor----------------------*/
 .partners{
     padding-top: 20px;
     padding-bottom: 20px;
+    background-image: url(../imgs/sfondo2.jpeg);
+    background-position: center;
+    background-size: cover;
 }
-
+.partners-title{
+    color: var(--second-brand-color);
+}
 .partners-list{
 display: flex;
 flex-wrap:wrap ;
 justify-content:space-between ;
+align-items: flex-start;
 }
 .pernter-link{
     display: block;
 }
 .partner-item{
     margin-bottom: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 12px 11px 30px 6px rgba(0,0,0,0.57);
+-webkit-box-shadow: 12px 11px 30px 6px rgba(0,0,0,0.57);
+-moz-box-shadow: 12px 11px 30px 6px rgba(0,0,0,0.57);
 }
 /* _____________________________sezione squadre_____________*/
 .list-squadre{
