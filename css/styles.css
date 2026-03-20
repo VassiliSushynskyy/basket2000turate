@@ -56,6 +56,8 @@ h1,h2,h3,h4 {
         width: 1220px;
         margin: 0 auto;
         padding: 15px;
+
+       
     }
     /*---------------------------header----------------------*/
     .header{
@@ -255,6 +257,14 @@ align-items: flex-start;
 -moz-box-shadow: 12px 11px 30px 6px rgba(0,0,0,0.57);
 }
 /* _____________________________sezione squadre_____________*/
+.squadre-section{
+    background-image: url(../imgs/sfondo5.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.squadre-container{
+     background-color: rgba(255, 255, 255, 0.801);
+}
 .list-squadre{
     font-family: "Faster One" , sans-serif;
     font-size: 40px;
@@ -305,9 +315,14 @@ display: flex;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: start;
 }
 .foto{
     margin-bottom: 40px;
+    border-radius: 25px;
+    box-shadow: 12px 11px 30px 6px rgba(0,0,0,0.57);
+-webkit-box-shadow: 12px 11px 30px 6px rgba(0,0,0,0.57);
+-moz-box-shadow: 12px 11px 30px 6px rgba(0,0,0,0.57);
 }
 /* _____________________________pagina chi siamo_____________*/
 .aboutus-section{
