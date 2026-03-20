@@ -1,7 +1,12 @@
 :root{
     --brand-color: rgb(0, 128, 0);
     --second-brand-color: rgb(255,255,255);
-    --title-fonts:
+    
+    --box-shadow: 12px 11px 30px 6px rgba(0,0,0,0.57);
+-webkit-box-shadow: 12px 11px 30px 6px rgba(0,0,0,0.57);
+-moz-box-shadow: 12px 11px 30px 6px rgba(0,0,0,0.57);
+
+    
 }
 body{
     font-family: "noto", sans-serif;
@@ -137,9 +142,9 @@ border-radius: 25px;
         color: var(--second-brand-color);
     }
     .footer-list{
-display: flex;
-justify-content: space-between;
-margin-left: auto;
+       display: flex;
+     justify-content: space-between;
+     margin-left: auto;
     }
     .footer{
         display: flex;
@@ -184,7 +189,6 @@ margin-left: auto;
         background-color:var(--brand-color);
         
         background-image: url(../imgs/back.jpg);
- 
         background-position: center;
         background-size: cover;
         
@@ -252,15 +256,13 @@ align-items: flex-start;
     margin-bottom: 40px;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 12px 11px 30px 6px rgba(0,0,0,0.57);
--webkit-box-shadow: 12px 11px 30px 6px rgba(0,0,0,0.57);
--moz-box-shadow: 12px 11px 30px 6px rgba(0,0,0,0.57);
+    box-shadow: var(--box-shadow)
 }
 /* _____________________________sezione squadre_____________*/
 .squadre-section{
     background-image: url(../imgs/sfondo5.jpeg);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
 }
 .squadre-container{
      background-color: rgba(255, 255, 255, 0.801);
@@ -280,16 +282,25 @@ align-items: flex-start;
     text-align: center;
     margin-bottom: 20px;
    
+    
 }
 .img-squadra img{
 margin-left: auto;
 margin-right: auto;
+
+box-shadow: var(--box-shadow);
 }
 .squadra{
-    width: 500px;
+   color: var(--brand-color);
+    
     justify-items: center;
     text-align: center;
      margin-bottom: 40px;
+
+     
+}
+.squadra img{
+    box-shadow: var(--box-shadow);
 }
 /* ----------------------------------prossime partite---------------*/
 .prossime-partite{
@@ -306,6 +317,8 @@ display: flex;
 }
 .game{
     margin-bottom: 40px;
+    border-radius: 25px;
+    box-shadow: var(--box-shadow);
 }
 /*------------------------------galleria-------------------*/
 .galleria-title{
@@ -324,11 +337,20 @@ display: flex;
 -webkit-box-shadow: 12px 11px 30px 6px rgba(0,0,0,0.57);
 -moz-box-shadow: 12px 11px 30px 6px rgba(0,0,0,0.57);
 }
+.galleria-section{
+background-image: url(../imgs/sfondo7.jpeg);
+background-position: 0 0;
+background-size: contain;
+}
 /* _____________________________pagina chi siamo_____________*/
 .aboutus-section{
     display: block;
     display: flex;
     align-items: center;
+}
+.about-slogan{
+font-family: "Faster One" , sans-serif;
+        font-size: 60px;
 }
 .aboutus-text{
     width: 50%;
@@ -354,9 +376,11 @@ color: var(--brand-color);
     line-height: 100%;
    letter-spacing:2.2%;
    border: solid,var(--brand-color);
+   border-radius: 15px;
     padding: 20px;
     width: 380px;
     margin-bottom: 15px;
+    box-shadow: var(--box-shadow);
 }
 
 .portret{
@@ -367,6 +391,9 @@ color: var(--brand-color);
    letter-spacing:2.2%;
 
 
+}
+.portret img{
+    box-shadow: var(--box-shadow);
 }
 .list-gioccatore{
    display: flex;
