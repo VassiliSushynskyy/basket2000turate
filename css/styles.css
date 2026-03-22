@@ -89,7 +89,8 @@ h1,h2,h3,h4 {
     .nav-link{
         display: block;
         padding: 15px;
-border-radius: 25px;
+        border-radius: 25px;
+       
         
     }
     .nav-item{
@@ -232,6 +233,7 @@ padding: 10px;
     background-image: url(../imgs/sfondo4.jpeg);
 }
 
+
 /*---------------------------sponsor----------------------*/
 .partners{
     padding-top: 20px;
@@ -295,12 +297,13 @@ box-shadow: var(--box-shadow);
     
     justify-items: center;
     text-align: center;
-     margin-bottom: 40px;
+     margin-bottom: 50px;
 
      
 }
 .squadra img{
     box-shadow: var(--box-shadow);
+    margin-bottom: 30px;
 }
 /* ----------------------------------prossime partite---------------*/
 .prossime-partite{
@@ -343,10 +346,17 @@ background-position: 0 0;
 background-size: contain;
 }
 /* _____________________________pagina chi siamo_____________*/
+.main-aboutus{
+    background-image: url(../imgs/sfondo1.jpeg);
+}
+.aboutus-description{
+background-color: rgba(255, 255, 255, 0.801);
+}
 .aboutus-section{
     display: block;
     display: flex;
     align-items: center;
+    
 }
 .about-slogan{
 font-family: "Faster One" , sans-serif;
@@ -360,6 +370,9 @@ font-family: "Faster One" , sans-serif;
     font-size: 20px;
     margin-bottom: 15px;
     margin-right: 15px;
+}
+.staff-section{
+    background-color: rgba(255, 255, 255, 0.801);
 }
 .direttivo-list{
    
@@ -381,6 +394,7 @@ color: var(--brand-color);
     width: 380px;
     margin-bottom: 20px;
     box-shadow: var(--box-shadow);
+    background-color: var(--second-brand-color);
 }
 
 .portret{
@@ -394,6 +408,7 @@ color: var(--brand-color);
 }
 .portret img{
     box-shadow: var(--box-shadow);
+    margin-bottom: 30px;
 }
 .list-gioccatore{
    display: flex;
@@ -402,7 +417,10 @@ justify-content: space-between;
 }
 .schieda-gioccatore{
     width: 380px;
-    margin-bottom: 15px;
+    margin-bottom: 45px;
+}
+.safe-section{
+    background-color: rgba(255, 255, 255, 0.801);
 }
 .text-saveguard{
     font-size: 30px;
