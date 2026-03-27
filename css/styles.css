@@ -192,8 +192,8 @@ h1,h2,h3,h4 {
 
         
         background-color:var(--brand-color);
+        background-image: linear-gradient(90deg, rgba(87, 199, 133, 0.8) 0%, rgba(87, 199, 133, 0.5) 50%, rgba(87, 199, 133, 0.3) 100%), url(../imgs/back.jpg);
         
-        background-image: url(../imgs/back.jpg);
         background-position: center;
         background-size: cover;
         
@@ -283,6 +283,25 @@ align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-around;
     
+}
+.gradient-photo{
+    position: relative;
+        display: inline-block;
+}
+.gradient-photo::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    /* Градієнт: від прозорого до кольорового */
+    background-image: linear-gradient(90deg, rgba(87, 199, 133, 0.3) 0%, rgba(87, 199, 133, 0.3) 50%, rgba(87, 199, 133, 0.3) 100%);
+    transition: all 0.3s ease;
+}
+.gradient-photo:hover::after {
+background-image: linear-gradient(90deg, rgba(87, 199, 133, 0.0) 0%, rgba(87, 199, 133, 0.0) 50%, rgba(87, 199, 133, 00) 100%);
+transition: all 1s ease;
 }
 .img-squadra{
     text-align: center;
