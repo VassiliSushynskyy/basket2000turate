@@ -371,6 +371,14 @@ background-image: url(../imgs/sfondo7.jpeg);
 background-position: 0 0;
 background-size: contain;
 }
+.manidimarco-link{
+    position: fixed;
+        right: 30px;
+        bottom: 180px;
+
+        border-radius: 25px;
+        box-shadow: var(--box-shadow);
+}
 /* _____________________________pagina chi siamo_____________*/
 .main-aboutus{
     background-image: url(../imgs/sfondo1.jpeg);
