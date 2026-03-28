@@ -195,7 +195,7 @@ h1,h2,h3,h4 {
 
         
         background-color:var(--brand-color);
-        background-image: linear-gradient(90deg, rgba(87, 199, 133, 0.8) 0%, rgba(87, 199, 133, 0.5) 50%, rgba(87, 199, 133, 0.3) 100%), url(../imgs/back.jpg);
+        background-image: linear-gradient(90deg, rgba(87, 199, 133, 0.3) 0%, rgba(87, 199, 133, 0.5) 50%, rgba(87, 199, 133, 0.3) 100%), url(../imgs/back.jpg);
         
         background-position: center;
         background-size: cover;
