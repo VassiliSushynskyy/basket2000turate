@@ -195,7 +195,7 @@ h1,h2,h3,h4 {
 
         
         background-color:var(--brand-color);
-        background-image: linear-gradient(90deg, rgba(87, 199, 133, 0.3) 0%, rgba(87, 199, 133, 0.5) 50%, rgba(87, 199, 133, 0.3) 100%), url(../imgs/back.jpg);
+        background-image: linear-gradient(90deg, rgba(87, 199, 133, 0.3) 0%, rgba(87, 199, 133, 0.3) 50%, rgba(87, 199, 133, 0.3) 100%), url(../imgs/back.jpg);
         
         background-position: center;
         background-size: cover;
@@ -205,6 +205,7 @@ h1,h2,h3,h4 {
        height: inherit;
     }
     .hero-title{
+        margin-bottom: 30px;
         text-shadow: 3px -5px 0px rgba(241,232,232,1), 3px 9px 0px rgba(241,232,232,1);
     }
    
@@ -221,7 +222,7 @@ h1,h2,h3,h4 {
     }
    .hero-text{
 
-    width: 50%;
+    width: 100%;
     font-weight: 600;
     font-size: 35px;
     line-height: 100%;
@@ -231,7 +232,7 @@ h1,h2,h3,h4 {
 background-color: rgba(241,232,232,0.6);
 border-radius: 25px;
 padding: 10px;
-
+margin-top: 400px;
 }
 /*---------------------------news----------------------*/
 .news{
@@ -372,9 +373,9 @@ background-position: 0 0;
 background-size: contain;
 }
 .manidimarco-link{
-    position: fixed;
+    position: relative;
         right: 30px;
-        bottom: 180px;
+        bottom: 30px;
 
         border-radius: 25px;
         box-shadow: var(--box-shadow);
