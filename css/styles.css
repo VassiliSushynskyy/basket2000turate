@@ -40,7 +40,7 @@ h1,h2,h3,h4 {
   content: "";
 }
 :active, :hover, :focus {
-  outline: 0!important;
+  outline: 0;
   outline-offset: 0;
 }
     figure{
@@ -500,6 +500,7 @@ color: var(--brand-color);
 
 
 }
+
 .portret img{
     box-shadow: var(--box-shadow);
     margin-bottom: 30px;
@@ -513,6 +514,7 @@ justify-content: space-between;
     width: 380px;
     margin-bottom: 45px;
 }
+
 .safe-section{
     background-color: rgba(255, 255, 255, 0.801);
 }
