@@ -79,10 +79,19 @@ h1,h2,h3,h4 {
     }
     /*---------------------------header----------------------*/
     .header{
+        position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; /* O la larghezza desiderata, es. 80% */
+    z-index: 1000;
+    width: 1220px;
         display: inline-block;
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        background-color: rgba(255, 255, 255, 0.801);
     }
     
     .header-up{
@@ -199,9 +208,9 @@ h1,h2,h3,h4 {
     }
     /*________________________sezione Hero________________*/
     .hero{
-        padding-top: 20px;
+        padding-top: 200px;
         padding-bottom: 20px;
-        height: 900px;
+        height: 1100px;
 
         
         background-color:var(--brand-color);
@@ -220,9 +229,9 @@ h1,h2,h3,h4 {
     }
    
     .hero-slogan{
-        width: 50%;
+        width: 90%;
         font-family: "Faster One" , sans-serif;
-        font-size: 60px;
+        font-size: 50px;
         margin-bottom: 60px;
          margin-left: auto;
          margin-right: auto;
@@ -242,7 +251,7 @@ h1,h2,h3,h4 {
 background-color: rgba(241,232,232,0.6);
 border-radius: 25px;
 padding: 10px;
-margin-top: 400px;
+margin-top: 550px;
 }
 /*---------------------------news----------------------*/
 .news{
@@ -393,6 +402,7 @@ background-size: contain;
 /* _____________________________pagina chi siamo_____________*/
 .main-aboutus{
     background-image: url(../imgs/sfondo1.jpeg);
+    padding-top: 200px;
 }
 .aboutus-description{
 background-color: rgba(255, 255, 255, 0.801);
@@ -531,6 +541,7 @@ background-image: url(../imgs/sfondo3.jpeg);
 background-repeat: no-repeat;
 background-position: center;
     background-size: cover;
+    padding-top: 200px;
 }
 .event-container{
     background-color: rgba(255, 255, 255, 0.801);
@@ -564,6 +575,8 @@ background-position: center;
     background-image: url(../imgs/sfondo5.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+
+    padding-top: 200px;
 }
 .orari-container{
     background-color: rgba(255, 255, 255, 0.9);
@@ -576,9 +589,18 @@ background-position: center;
    margin-bottom: 20px;
    text-align: center;
 }
+.resultati-section{
+    background-image: url(../imgs/sfondo4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+
+}
 /* _____________________________pagina contatti_____________*/
 .contact-section{
     background-image: url(../imgs/sfondo\ sito.jpeg);
+    padding-top: 200px;
+    
 }
 .contact-container{
     background-color:rgba(255, 255, 255, 0.801);
@@ -628,7 +650,7 @@ border-radius: 20px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
+    margin-top: 200px;
 }
 .tabella-container{
     background-color: rgba(255, 255, 255, 0.9);
@@ -676,6 +698,10 @@ background-color:var(--second-brand-color);
 .teams-section{
     background-image: url(../imgs/sfondo6.jpeg);
     background-attachment: fixed;
+    
+}
+.pulcini-tems{
+    margin-top: 200px;
 }
 .teams-container{
     background-color: rgba(255, 255, 255, 0.801);
