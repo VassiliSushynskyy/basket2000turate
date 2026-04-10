@@ -680,3 +680,9 @@ background-color:var(--second-brand-color);
 .teams-container{
     background-color: rgba(255, 255, 255, 0.801);
 }
+.xmille{
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
