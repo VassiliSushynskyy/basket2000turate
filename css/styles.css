@@ -711,4 +711,10 @@ background-color:var(--second-brand-color);
     position: fixed;
     bottom: 10px;
     right: 10px;
+    
+}
+.xmille:hover,:focus{
+    transform: scale3d(3, 3, 3) rotate3d(360, 360, 360, 360deg);
+    transform-origin: right bottom;
+    transition: all 0.5s ease;
 }
