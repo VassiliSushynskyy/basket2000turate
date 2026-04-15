@@ -90,6 +90,7 @@ h1,h2,h3,h4 {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        border-radius: 25px;
 
         background-color: rgba(255, 255, 255, 0.801);
     }
@@ -286,6 +287,7 @@ align-items: flex-start;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: var(--box-shadow)
+    
 }
 /* _____________________________sezione squadre_____________*/
 .squadre-section{
@@ -711,10 +713,10 @@ background-color:var(--second-brand-color);
     position: fixed;
     bottom: 10px;
     right: 10px;
-    
+   transition:all  500ms ease; 
 }
 .xmille:hover,:focus{
     transform: scale3d(3, 3, 3) rotate3d(360, 360, 360, 360deg);
     transform-origin: right bottom;
-    transition: all 0.5s ease;
+    transition: all cubic-bezier(1, 0, 0, 1) 250ms ease;
 }
