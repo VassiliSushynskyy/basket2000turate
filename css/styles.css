@@ -691,10 +691,13 @@ caption{
     border-radius: 50px;
     background-color: var(--brand-color);
     color: var(--second-brand-color);
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .classifica-btn:hover,:focus{
 background-color:var(--second-brand-color);
     color:var(--brand-color);
+    border-radius: 10px;
+  transform: rotate(15deg);
 }
 /*______________________________________squadre_____________________________________*/
 .teams-section{
