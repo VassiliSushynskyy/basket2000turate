@@ -60,7 +60,7 @@ h1,h2,h3,h4 {
         color: inherit;
         
     }
-    .link:hover,:focus{
+    .link:hover,.link:focus{
         color:var(--second-brand-color);
         background-color: var(--brand-color);
 
@@ -693,7 +693,7 @@ caption{
     color: var(--second-brand-color);
     transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.classifica-btn:hover,:focus{
+.classifica-btn:hover,.classifica-btn:focus{
 background-color:var(--second-brand-color);
     color:var(--brand-color);
     border-radius: 10px;
@@ -711,15 +711,24 @@ background-color:var(--second-brand-color);
 .teams-container{
     background-color: rgba(255, 255, 255, 0.801);
 }
-.xmille{
-    display: block;
+.tumb-xmille{
+   display: block;
     position: fixed;
     bottom: 10px;
     right: 10px;
-   transition:all  500ms ease; 
+   width: 200px;
+   perspective: 600px
 }
-.xmille:hover,:focus{
+.xmille{
+   
+    width: 200px;
+    border-radius: 25px;
+    box-shadow: var(--box-shadow);
+    transition:transform cubic-bezier(.17,.67,.83,.67)  500ms;
+}
+
+.tumb-xmille:hover .xmille{
     transform: scale3d(3, 3, 3) rotate3d(360, 360, 360, 360deg);
     transform-origin: right bottom;
-    transition: all cubic-bezier(1, 0, 0, 1) 250ms ease;
+    transition: transform cubic-bezier(.17,.67,.83,.67) 500ms;
 }
