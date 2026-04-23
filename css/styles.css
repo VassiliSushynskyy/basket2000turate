@@ -218,7 +218,7 @@ transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         align-items: center;
         justify-content: space-between;
         border-radius: 25px;
-
+        
         background-color: rgba(255, 255, 255, 0.801);
     }
     
@@ -386,6 +386,9 @@ margin-top: 500px;
     padding-top: 20px;
     padding-bottom: 20px;
     background-image: url(../imgs/sfondo4.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 
