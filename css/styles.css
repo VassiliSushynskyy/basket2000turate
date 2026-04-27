@@ -17,6 +17,8 @@ line-height: 1.2;
 letter-spacing: 3%;
 
 min-width: 1220px;
+
+
 }
 ul, p, h1,h2,h3,h4{
     margin: 0;
@@ -383,12 +385,11 @@ margin-top: 500px;
 }
 /*---------------------------news----------------------*/
 .news{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-image: url(../imgs/sfondo1.jpeg);
+  background-image: url(../imgs/sfondo1.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    
 }
 .news-container{
     background-color: rgba(255, 255, 255, 0.801);
