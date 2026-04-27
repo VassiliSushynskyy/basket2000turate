@@ -385,7 +385,7 @@ margin-top: 500px;
 .news{
     padding-top: 20px;
     padding-bottom: 20px;
-    background-image: url(../imgs/sfondo4.jpeg);
+    background-image: url(../imgs/sfondo1.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -395,7 +395,7 @@ margin-top: 500px;
 .partners{
     padding-top: 20px;
     padding-bottom: 20px;
-    background-image: url(../imgs/sfondo2.jpeg);
+    background-image: url(../imgs/sfondo1.jpeg);
     background-position: center;
     background-size: cover;
 }
@@ -427,7 +427,7 @@ align-items: flex-start;
 }
 /* _____________________________sezione squadre_____________*/
 .squadre-section{
-    background-image: url(../imgs/sfondo5.jpeg);
+    background-image: url(../imgs/sfondo1.jpeg);
     background-position: center;
     background-size: contain;
 }
