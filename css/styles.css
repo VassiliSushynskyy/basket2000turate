@@ -503,6 +503,7 @@ box-shadow: var(--box-shadow);
 /* ----------------------------------prossime partite---------------*/
 .prossime-partite{
     background-color: var(--brand-color);
+     padding-top: 200px;
 }
 .partite-div{
     background-color: rgba(255, 255, 255, 0.801);
@@ -697,7 +698,7 @@ background-image: url(../imgs/sfondo3.jpeg);
 background-repeat: no-repeat;
 background-position: center;
     background-size: cover;
-    padding-top: 200px;
+   
 }
 .event-container{
     background-color: rgba(255, 255, 255, 0.801);
