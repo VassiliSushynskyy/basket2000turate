@@ -26,3 +26,9 @@
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
+const toggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".header-down");
+
+toggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
