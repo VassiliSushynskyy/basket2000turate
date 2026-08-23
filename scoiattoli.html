@@ -69,11 +69,79 @@
 
             </div>
         </div>
-                <a class="link" href="./index.html">
+                <a class="link header-badge" href="./index.html">
           <img class="social-img" src="./imgs/30annilogosf.png" alt="logo" width="120" height="120"> 
         </a>
+        <button class="burger-btn js-open-menu" type="button" aria-expanded="false" aria-label="Apri menu">
+            <svg class="burger-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
         </div>
         </header>
+
+        <!-- Mobile Menu Drawer -->
+        <div class="mobile-menu js-menu-container">
+            <div class="mobile-menu-backdrop js-menu-backdrop"></div>
+            <div class="mobile-menu-inner">
+                <div class="mobile-menu-header">
+                    <a class="mobile-menu-logo" href="./index.html">
+                        <img src="./imgs/logosenzasfondo.png" alt="logo" width="48" height="48">
+                    </a>
+                    <button class="mobile-menu-close js-close-menu" type="button" aria-label="Chiudi menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="mobile-nav">
+                    <ul class="mobile-nav-list">
+                        <li><a class="mobile-nav-link js-menu-link" href="./index.html">HOME</a></li>
+                        <li><a class="mobile-nav-link js-menu-link" href="./chi-siamo.html">Chi siamo</a></li>
+                        <li class="mobile-nav-group">
+                            <span class="mobile-nav-group-title">SQUADRE</span>
+                            <ul class="mobile-teams-grid">
+                                <li><a class="mobile-team-link js-menu-link" href="./pulcini.html">Pulcini</a></li>
+                                <li><a class="mobile-team-link js-menu-link active" href="./scoiattoli.html">Scoiattoli</a></li>
+                                <li><a class="mobile-team-link js-menu-link" href="./aquilotti.html">Aquilotti</a></li>
+                                <li><a class="mobile-team-link js-menu-link" href="./under13.html">Under 13</a></li>
+                                <li><a class="mobile-team-link js-menu-link" href="./under15.html">Under 15</a></li>
+                                <li><a class="mobile-team-link js-menu-link" href="./under17.html">Under 17</a></li>
+                                <li><a class="mobile-team-link js-menu-link" href="./dr3.html">DR3</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="mobile-nav-link js-menu-link" href="./eventi.html">Eventi</a></li>
+                        <li><a class="mobile-nav-link js-menu-link" href="./palestre-e-orari.html">Palestre e Orari</a></li>
+                        <li><a class="mobile-nav-link js-menu-link" href="./risultati.html">Calendari/Risultati</a></li>
+                        <li><a class="mobile-nav-link js-menu-link" href="./contatti.html">Contatti</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-footer">
+                    <p class="mobile-social-title">Seguici</p>
+                    <ul class="mobile-socials">
+                        <li>
+                            <a class="mobile-social-icon" href="https://www.instagram.com/basket2000turate/" target="_blank" rel="noreferrer noopener" aria-label="Instagram">
+                                <img src="./svg/instagram-2016-logo-svgrepo-com.svg" alt="instagram" width="22" height="22">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="mobile-social-icon" href="https://www.youtube.com/@BasketTurate" target="_blank" rel="noreferrer noopener" aria-label="YouTube"> 
+                                <img src="./svg/youtube-svgrepo-com.svg" alt="youtube" width="22" height="22">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="mobile-social-icon" href="https://www.facebook.com/basket2000turate" target="_blank" rel="noreferrer noopener" aria-label="Facebook">
+                                <img src="./svg/facebook-3-logo-svgrepo-com.svg" alt="facebook" width="22" height="22">
+                            </a>
+                        </li>
+                    </ul>
+                    <img class="mobile-menu-badge" src="./imgs/30annilogosf.png" alt="30 anni logo" width="60" height="60">
+                </div>
+            </div>
+        </div>
           <main>
              
                  <!--_____________________________ sezione tabella_______________________________________________-->
@@ -317,6 +385,7 @@
           <img class="social-img" src="./imgs/30annilogosf.png" alt="logo" width="120" height="120"> 
         </a>
        </div>
-           </footer>
+    </footer>
+    <script defer src="./mobile-menu/mobile-menu.js"></script>
 </body>
 </html>
