@@ -268,122 +268,6 @@ img {
     margin: 0 15px;
 }
 
-.nav-link{
-    display: block;
-    padding: 15px;
-    border-radius: 25px;
-}
-.link-result{
-    background-color: orange; 
-}
-.nav-item{
-   margin-top: 5px;
-   margin-bottom: 5px;
-}
-/*.nav-item:not(:last-child){
-    margin-left: 25px;
-}*/
-.text-header{
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin-right: 60px;
-}
-.socials-header{
-    display: flex;
-}
-.social:not(:last-child){
-    margin-right: 40px;
-}
-.social-link{
-    display: block;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    border-radius: 0px;
-}
-.social-img{
-    border-radius: 0px;
-}
-.nav-items{
-    display: flex;
-}
-.nav-teams{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-top:solid 2px var(--brand-color) ;
-}
-.nav-teams:not(:last-child){
-    margin-left: 25px;
-}
-/*________________________sezione footer________________*/
-.footer-section{
-    background-color: #212121;
-    color: var(--second-brand-color);
-}
-.footer-list{
-   display: flex;
- justify-content: space-between;
- margin-left: auto;
-}
-.footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.footer-info{
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-address{
-    margin-right: auto;
-}
-.footer-social{
-    display: flex;
-}
-.footer-sections{
-    display: inline-block;
-    align-items: center;
-}
-.copyriht-section{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 15px;
-}
-.creatore{
-    font-family: Brush Script MT;
-}
-/*________________________sezione Hero________________*/
-.hero{
-    margin-top: 60px;
-    padding-top: 200px;
-    padding-bottom: 20px;
-    height: 1100px;
-    background-color:var(--brand-color);
-    background-image:  url(../imgs/fotoheromobile.jpeg);
-    background-position: center;
-    background-size: cover;
-}
-.hero > .container{
-   height: inherit;
-}
-.hero-title{
-    margin-bottom: 10px;
-    text-shadow: 3px -5px 0px rgba(241,232,232,1), 3px 9px 0px rgba(241,232,232,1);
-}
-
-.hero-slogan{
-    width: 90%;
-    font-family: "Faster One" , sans-serif;
-    font-size: 50px;
-    margin-bottom: 60px;
-     margin-left: auto;
-     margin-right: auto;
-     margin-top: 0px;
-     color: var(--second-brand-color);
-}
-.hero-text{
-
 .header-up {
     display: flex;
     align-items: center;
@@ -723,7 +607,8 @@ address{
     padding-bottom: 40px;
     min-height: 85vh;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: center;
     background-color: var(--brand-color);
     background-image: linear-gradient(90deg, rgba(87, 199, 133, 0.3) 0%, rgba(87, 199, 133, 0.3) 50%, rgba(87, 199, 133, 0.3) 100%), url(../imgs/back.jpeg);
     background-position: center;
@@ -733,8 +618,8 @@ address{
 .hero > .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 .hero-title {
@@ -757,14 +642,14 @@ address{
 .hero-text {
     width: 100%;
     font-weight: 600;
-    font-size: clamp(16px, 2.5vw, 30px);
-    line-height: 1.3;
+    font-size: clamp(16px, 2.2vw, 26px);
+    line-height: 1.4;
     letter-spacing: 0.01em;
     color: #2e4d2b;
-    background-color: rgba(241, 232, 232, 0.85);
+    background-color: rgba(241, 232, 232, 0.9);
     border-radius: 20px;
     padding: 18px 24px;
-    margin-top: 720px;
+    margin-top: auto;
     text-align: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
@@ -803,8 +688,8 @@ address{
 
 /*--------------------------- Partners Section ----------------------*/
 .partners {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 35px;
+    padding-bottom: 35px;
     background-image: url(../imgs/sfondo1.jpeg);
     background-position: center;
     background-size: cover;
@@ -824,39 +709,63 @@ address{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    gap: 25px;
+    align-items: stretch;
+    gap: 20px;
     padding: 0;
 }
 
-.partner-link {
-    display: block;
-}
-
 .partner-item {
-    border-radius: 10px;
+    width: 100%;
+    max-width: 270px;
+    height: 150px;
+    border-radius: 14px;
     overflow: hidden;
     box-shadow: var(--box-shadow);
+    background-color: #ffffff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: min(100%, 360px);
+    display: flex;
 }
 
 .partner-item:hover {
-    transform: scale(1.06);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-.partner-item img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
+.partner-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 14px;
+    background-color: #ffffff;
+    border-radius: 14px;
+}
+
+.partner-link:hover, .partner-link:focus {
+    background-color: #ffffff !important;
+}
+
+.partner-item img,
+.partner-img,
+.manidimarco-img {
+    width: 100%;
+    height: 100%;
+    max-height: 122px;
+    object-fit: contain;
+    border-radius: 8px;
+    display: block;
 }
 
 .manidimarco-link {
-    position: relative;
-    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
     box-shadow: var(--box-shadow);
-    display: inline-block;
+    background-color: #ffffff;
 }
 
 /*--------------------------- Squadre Section ----------------------*/
@@ -864,7 +773,7 @@ address{
     background-image: url(../imgs/sfondo1.jpeg);
     background-position: center;
     background-size: cover;
-    padding: 30px 0;
+    padding: 35px 0;
 }
 
 .squadre-container {
@@ -875,8 +784,6 @@ address{
 
 .list-squadre {
     font-family: "Faster One", sans-serif;
-    font-size: clamp(22px, 3.5vw, 40px);
-    line-height: 1.1;
     letter-spacing: 0.02em;
     display: flex;
     flex-wrap: wrap;
@@ -885,41 +792,54 @@ address{
 }
 
 .squadra {
-    color: var(--brand-color);
     text-align: center;
     width: 100%;
     max-width: 540px;
 }
 
-.squadra img {
-    box-shadow: var(--box-shadow);
-    margin-bottom: 15px;
-    width: 100%;
-    height: auto;
-}
-
 .gradient-photo {
     position: relative;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 16px;
     overflow: hidden;
+    margin-bottom: 12px;
+    box-shadow: var(--box-shadow);
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 10px;
 }
 
-.gradient-photo::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+.gradient-photo:hover,
+.gradient-photo:focus {
+    background-color: #ffffff !important;
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.gradient-photo img {
     width: 100%;
-    height: 85%;
-    background-image: linear-gradient(90deg, rgba(87, 199, 133, 0.3) 0%, rgba(87, 199, 133, 0.3) 50%, rgba(87, 199, 133, 0.3) 100%);
-    transition: all 0.3s ease;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+    border-radius: 16px 16px 0 0;
+    transition: transform 0.4s ease;
 }
 
-.gradient-photo:hover::after {
-    background-image: linear-gradient(90deg, rgba(87, 199, 133, 0.0) 0%, rgba(87, 199, 133, 0.0) 50%, rgba(87, 199, 133, 0.0) 100%);
-    transition: all 0.5s ease;
+.team-title {
+    display: block;
+    width: 100%;
+    color: var(--brand-color);
+    font-size: clamp(20px, 3vw, 32px);
+    line-height: 1.2;
+    padding: 12px 10px 4px;
+    text-align: center;
+}
+
+.gradient-photo:hover .team-title {
+    color: var(--brand-color);
 }
 
 .img-squadra {
@@ -931,13 +851,12 @@ address{
     margin-left: auto;
     margin-right: auto;
     box-shadow: var(--box-shadow);
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 16px;
     transition: transform 0.3s ease;
-}
-
-.img-squadra img:hover {
-    transform: scale(1.03);
 }
 
 /*--------------------------- Page Headers & Backgrounds ----------------------*/
@@ -974,7 +893,10 @@ address{
     margin-bottom: 20px;
     border-radius: 20px;
     box-shadow: var(--box-shadow);
-    max-width: 100%;
+    width: 100%;
+    max-width: 480px;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
 }
 
 /*--------------------------- Galleria ----------------------*/
@@ -997,7 +919,10 @@ address{
     margin-bottom: 25px;
     border-radius: 20px;
     box-shadow: var(--box-shadow);
-    max-width: 100%;
+    width: 100%;
+    max-width: 360px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
 }
 
 /*--------------------------- Chi Siamo ----------------------*/
@@ -1048,17 +973,82 @@ address{
 .safe-section {
     background-color: rgba(255, 255, 255, 0.88);
     border-radius: 20px;
-    padding: 25px 15px;
+    padding: 30px 20px;
     margin-bottom: 30px;
 }
 
-.text-saveguard {
-    font-size: clamp(16px, 2.5vw, 26px);
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto 20px auto;
+.safe-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.safe-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    line-height: 1.4;
+    width: 100%;
+}
+
+.safe-item h3 {
+    font-size: clamp(22px, 3.5vw, 36px);
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.text-saveguard {
+    font-size: clamp(15px, 2.2vw, 22px);
+    max-width: 850px;
+    width: 100%;
+    margin: 0 auto 15px auto;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.safe-pdf-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: 650px;
+    margin: 20px auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    background-color: #ffffff;
+}
+
+.safe-section iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 16px;
+    display: block;
+}
+
+.safe-download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    margin-top: 10px;
+    background-color: var(--brand-color);
+    color: var(--second-brand-color);
+    font-weight: 700;
+    font-size: clamp(14px, 2vw, 16px);
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 128, 0, 0.3);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.safe-download-btn:hover,
+.safe-download-btn:focus {
+    background-color: #0b7a0b;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 128, 0, 0.4);
 }
 
 /*------------- Border Card CSS ------------*/
@@ -1136,23 +1126,37 @@ address{
 .direttivo-staf {
     color: var(--brand-color);
     font-family: "Faster One", sans-serif;
-    font-size: clamp(18px, 2.5vw, 28px);
-    line-height: 1.1;
+    font-size: clamp(16px, 2.2vw, 24px);
+    line-height: 1.2;
     letter-spacing: 0.02em;
     border: 2px solid var(--brand-color);
     border-radius: 15px;
     padding: 15px;
     width: 100%;
-    max-width: 380px;
+    max-width: 360px;
     margin-bottom: 10px;
     box-shadow: var(--box-shadow);
     background-color: var(--second-brand-color);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .direttivo-staf:hover {
-    transform: scale(1.05);
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.direttivo-staf img {
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 /*--------------------------- Player Rosters ----------------------*/
@@ -1165,17 +1169,18 @@ address{
 
 .schieda-gioccatore {
     width: 100%;
-    max-width: 360px;
+    max-width: 280px;
     margin-bottom: 25px;
 }
 
 .portret {
     color: var(--brand-color);
     font-family: "Faster One", sans-serif;
-    font-size: clamp(16px, 2.2vw, 22px);
-    line-height: 1.1;
+    font-size: clamp(15px, 2vw, 20px);
+    line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: center;
+    display: block;
 }
 
 .portret:hover {
@@ -1185,9 +1190,12 @@ address{
 
 .portret img {
     box-shadow: var(--box-shadow);
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     width: 100%;
-    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 14px;
+    transition: transform 0.3s ease;
 }
 
 /*--------------------------- Eventi ----------------------*/
@@ -1216,20 +1224,59 @@ address{
 }
 
 .list-eventi {
-    color: var(--brand-color);
-    font-family: "Faster One", sans-serif;
-    font-size: clamp(16px, 2.5vw, 22px);
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.event-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 850px;
 }
 
 .img-eventi {
-    margin-right: auto;
     margin-left: auto;
-    margin-bottom: 15px;
+    margin-right: auto;
+    margin-bottom: 20px;
     max-width: 100%;
     height: auto;
+    border-radius: 16px;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease;
+}
+
+.img-eventi:hover {
+    transform: scale(1.02);
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 720px;
+    aspect-ratio: 16 / 9;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    margin: 15px auto;
+    background-color: #000000;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 16px;
+    display: block;
 }
 
 /*--------------------------- Palestre e Orari ----------------------*/
@@ -1461,6 +1508,8 @@ caption .link {
 .tumb-xmille:hover .xmille {
     transform: scale(1.15);
     transform-origin: right bottom;
+}
+
 /*--------------------------- Footer ----------------------*/
 .footer-section {
     background-color: var(--dark-color);
@@ -1555,6 +1604,11 @@ address {
 
 /* Tablet & Mobile (<= 1024px) */
 @media screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
     .header {
         position: fixed;
         top: 0;
@@ -1566,6 +1620,7 @@ address {
         padding: 8px 16px;
         background-color: rgba(255, 255, 255, 0.98);
         box-shadow: 0 2px 15px rgba(0, 0, 0, 0.12);
+        z-index: 1000;
     }
 
     .headers-sections {
@@ -1600,7 +1655,15 @@ address {
     .hero {
         padding-top: 110px;
         padding-bottom: 40px;
-        min-height: 75vh;
+        min-height: 70vh;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .hero-text {
+        margin-top: auto;
+        font-size: clamp(16px, 2.5vw, 22px);
     }
 
     .aboutus-section {
@@ -1614,6 +1677,22 @@ address {
         margin: 0 auto;
     }
 
+    .partners-list {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .list-squadre {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .direttivo-list,
+    .list-gioccatore {
+        justify-content: center;
+        gap: 20px;
+    }
+
     .footer {
         flex-direction: column;
         text-align: center;
@@ -1621,162 +1700,60 @@ address {
     }
 }
 
-/* Incoming branch additions: keep tablet/mobile helper rules */
-@media screen and (max-width: 1024px) {
-
-    .container{
-        width: 100%;
-        padding: 15px;
-    }
-
-    .header{
-        width: 100%;
-        flex-wrap: wrap;
-        position: relative;
-        transform: none;
-        left: 0;
-    }
-
-    .nav-items,
-    .nav-teams{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .hero{
-        height: auto;
-        padding-top: 120px;
-        padding-bottom: 60px;
-    }
-
-    .hero-text{
-        margin-top: 300px;
-        font-size: 24px;
-    }
-
-    .partners-list{
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .list-squadre{
-        justify-content: center;
-        gap: 30px;
-    }
-
-    .direttivo-list,
-    .list-gioccatore{
-        justify-content: center;
-        gap: 20px;
-    }
-}
-
-/* =========================
-   MOBILE
-========================= */
+/* Mobile (<= 768px) */
 @media screen and (max-width: 768px) {
-
-    h1,h2,h3,h4{
+    h1, h2, h3, h4 {
         font-size: 40px;
         margin-top: 20px;
         margin-bottom: 20px;
         animation: none;
     }
 
-    .header{
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
+    .hero {
+        padding-top: 90px;
+        padding-bottom: 30px;
+        min-height: 60vh;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
     }
 
-    .header-up,
-    .header-down{
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .nav-items,
-    .nav-teams{
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .nav-link{
-        padding: 10px;
+    .hero-text {
         font-size: 16px;
+        margin-top: auto;
+        padding: 14px 16px;
     }
 
-    .hero{
-        padding-top: 80px;
-        height: auto;
-    }
-
-    .hero-text{
-        font-size: 18px;
-        margin-top: 200px;
-        padding: 15px;
-    }
-
-    .partners-list{
+    .partners-list {
         flex-direction: column;
         align-items: center;
     }
 
-    .partner-item:hover{
-        transform: none; /* evita zoom rotazione su mobile */
+    .partner-item:hover {
+        transform: none;
     }
 
-    .list-squadre{
+    .list-squadre {
         flex-direction: column;
         align-items: center;
     }
 
-    .squadra img{
+    .squadra img {
         width: 90%;
         height: auto;
     }
 
-    .footer{
+    .footer-info {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .copyriht-section {
         flex-direction: column;
         text-align: center;
-        gap: 20px;
-    }
-}
-
-/* Incoming branch mobile tweaks */
-@media screen and (max-width: 768px) {
-    .hero{
-        height: auto;
-        padding-top: 120px;
-        padding-bottom: 60px;
+        gap: 6px;
     }
 
-    .hero-text{
-        margin-top: 300px;
-    }
-}
-
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
-
-.footer-info {
-    flex-direction: column;
-    gap: 12px;
-}
-
-.copyriht-section {
-    flex-direction: column;
-    text-align: center;
-    gap: 6px;
-}
-}
-
-/* Mobile (<= 768px) */
-@media screen and (max-width: 768px) {
     .tumb-xmille {
         width: 70px;
         bottom: 10px;
@@ -1806,6 +1783,10 @@ address {
     .contact-link {
         padding: 15px 10px;
     }
+
+    .safe-pdf-container {
+        height: 480px;
+    }
 }
 
 /* Small Mobile (<= 480px) */
@@ -1815,79 +1796,33 @@ address {
     }
 
     .hero-text {
-        padding: 14px 16px;
+        font-size: 15px;
+        margin-top: auto;
+        padding: 12px 14px;
     }
 
     .mobile-menu-inner {
         width: 100vw;
     }
 
-    /* Incoming branch small-phone rules */
-    .footer-info{
-        flex-direction: column;
-        gap: 10px;
+    .safe-pdf-container {
+        height: 380px;
     }
 
-    .copyriht-section{
-        flex-direction: column;
-        gap: 5px;
-        text-align: center;
-    }
-   
-    .partner-item{
-        transition: none;
-    }
-}
-
-/* =========================
-   PICCOLI TELEFONI
-========================= */
-@media screen and (max-width: 480px) {
-
-    .hero-text{
-        font-size: 16px;
-    }
-
-    .nav-link{
-        font-size: 14px;
-    }
-
-    .partner-item img{
-        width: 90%;
-    }
-
-    .direttivo-staf{
-        width: 90%;
-    }
-
-    .schieda-gioccatore{
-        width: 90%;
-    }
-}
-
-.menu-toggle{
-    display: none;
-    font-size: 30px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: var(--brand-color);
-}
-
-@media (max-width: 768px){
-    .menu-toggle{
-        display: block;
-    }
-
-    .header-down{
-        display: none;
+    .safe-download-btn {
         width: 100%;
+        padding: 10px 16px;
     }
 
-    .header-down.active{
-        display: block;
+    .partner-item img {
+        width: 90%;
     }
-}
 
+    .direttivo-staf {
+        width: 90%;
+    }
+
+    .schieda-gioccatore {
+        width: 90%;
     }
 }
