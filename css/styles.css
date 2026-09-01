@@ -249,6 +249,10 @@ img {
     background-color: transparent !important;
 }
 
+.mobile-header-brand {
+    display: none;
+}
+
 .logo-header .social-img,
 .header-badge .social-img {
     height: 100px;
@@ -610,7 +614,8 @@ img {
     align-items: flex-end;
     justify-content: center;
     background-color: var(--brand-color);
-    background-image: linear-gradient(90deg, rgba(87, 199, 133, 0.3) 0%, rgba(87, 199, 133, 0.3) 50%, rgba(87, 199, 133, 0.3) 100%), url(../imgs/back.jpeg);
+   /*--- background-image: linear-gradient(90deg, rgba(87, 199, 133, 0.3) 0%, rgba(87, 199, 133, 0.3) 50%, rgba(87, 199, 133, 0.3) 100%), */
+   background-image: url(../imgs/back.jpeg);
     background-position: center;
     background-size: cover;
 }
@@ -672,6 +677,8 @@ img {
     align-items: center;
     text-align: center;
     overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .news-container iframe {
@@ -679,11 +686,43 @@ img {
     border-radius: 12px;
 }
 
-.fb-page {
-    max-width: 100%;
-    overflow-x: auto;
+.title-facebook {
+    color: var(--brand-color);
+    margin-bottom: 20px;
+    font-size: clamp(24px, 4vw, 36px);
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+}
+
+.title-facebook a {
+    color: var(--brand-color);
+    text-decoration: underline;
+    transition: opacity 0.3s ease;
+}
+
+.title-facebook a:hover {
+    opacity: 0.8;
+}
+
+.fb-wrapper {
+    width: 100%;
+    max-width: 500px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.fb-page,
+.fb-page span,
+.fb-page iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 12px;
 }
 
 /*--------------------------- Partners Section ----------------------*/
@@ -1631,13 +1670,44 @@ address {
         display: none;
     }
 
+    .logo-header {
+        flex-shrink: 0;
+    }
+
     .logo-header .social-img {
         height: 52px;
         width: auto;
     }
 
+    .mobile-header-brand {
+        display: block;
+        font-family: "Alumni Sans Collegiate One", Impact, sans-serif;
+        color: var(--brand-color);
+        font-size: clamp(20px, 4.8vw, 30px);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1.1;
+        margin: 0;
+        padding: 0 8px;
+        flex-grow: 1;
+        text-decoration: none;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .mobile-header-brand:hover,
+    .mobile-header-brand:focus {
+        background-color: transparent !important;
+        color: var(--brand-color) !important;
+        opacity: 0.85;
+    }
+
     .burger-btn {
         display: flex;
+        margin-left: 0;
+        flex-shrink: 0;
     }
 
     .prossime-partite,
