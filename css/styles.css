@@ -1683,7 +1683,7 @@ address {
         display: block;
         font-family: "Alumni Sans Collegiate One", Impact, sans-serif;
         color: var(--brand-color);
-        font-size: clamp(35px, 4.8vw, 30px);
+        font-size: clamp(30px, 4.8vw, 30px);
         letter-spacing: 0.03em;
         text-transform: uppercase;
         text-align: center;
