@@ -617,7 +617,7 @@ img {
     background-image: url(../imgs/back.jpeg);
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat:no-repeat ;
 }
 
 .hero > .container {
