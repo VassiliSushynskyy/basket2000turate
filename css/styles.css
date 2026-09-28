@@ -1516,20 +1516,149 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.orari-img {
-    margin-left: auto;
-    margin-right: auto;
+
+.orari-container {
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 20px;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+.img-magnifier-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 20px;
+}
+
+.img-magnifier-container {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    cursor: zoom-in;
+    border-radius: 16px;
+}
+
+.orari-img {
+    display: block;
+    margin: 0 auto;
     max-width: 100%;
     height: auto;
     border-radius: 16px;
     box-shadow: var(--box-shadow);
     transition: transform 0.3s ease;
 }
-.orari-container {
-    background-color: rgba(255, 255, 255, 0.92);
+
+.img-magnifier-glass {
+    position: absolute;
+    border: 3px solid var(--brand-color);
+    border-radius: 50%;
+    cursor: crosshair;
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45), inset 0 0 15px rgba(0, 0, 0, 0.25);
+    background-color: #ffffff;
+    z-index: 100;
+    transition: opacity 0.15s ease;
+    transform: translateZ(0);
+}
+
+.magnifier-hint {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--brand-color);
+    background-color: rgba(0, 128, 0, 0.08);
+    padding: 6px 14px;
     border-radius: 20px;
-    padding: 25px 15px;
+    margin-top: 10px;
+    user-select: none;
+}
+
+.magnifier-hint svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+    flex-shrink: 0;
+}
+
+/* Modal Zoom Lightbox */
+.magnifier-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.magnifier-modal.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.magnifier-modal-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
+}
+
+.magnifier-modal-content {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    z-index: 2001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.magnifier-modal-content img {
+    max-width: 100%;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+.magnifier-modal-close {
+    position: absolute;
+    top: -45px;
+    right: 0;
+    background: #ffffff;
+    border: none;
+    color: #333333;
+    font-size: 28px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.magnifier-modal-close:hover {
+    background-color: var(--brand-color);
+    color: #ffffff;
+    transform: scale(1.1);
 }
 
 .text-palestre {
