@@ -303,6 +303,40 @@ img {
     padding: 8px 12px;
     border-radius: 20px;
     font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--second-brand-color);
+    background-color: var(--brand-color);
+    transform: scale(1.06);
+    box-shadow: 0 4px 12px rgba(0, 128, 0, 0.35);
+}
+
+.nav-link.active {
+    box-shadow: 0 2px 8px rgba(0, 128, 0, 0.25);
+}
+
+.nav-link.highlight-orange {
+    background-color: #ff6b00;
+    color: #ffffff !important;
+    box-shadow: 0 2px 8px rgba(255, 107, 0, 0.4);
+    transition: all 0.25s ease;
+}
+
+.nav-link.highlight-orange:hover,
+.nav-link.highlight-orange:focus {
+    background-color: #e05d00 !important;
+    color: #ffffff !important;
+    transform: scale(1.08);
+    box-shadow: 0 4px 14px rgba(224, 93, 0, 0.5);
+}
+
+.nav-link.highlight-orange.active {
+    background-color: #d45500 !important;
+    color: #ffffff !important;
+    box-shadow: 0 3px 10px rgba(212, 85, 0, 0.4);
 }
 
 .nav-teams {
@@ -315,6 +349,13 @@ img {
 .nav-teams .nav-link {
     padding: 6px 10px;
     font-size: 15px;
+    transition: all 0.25s ease;
+}
+
+.nav-teams .nav-link:hover,
+.nav-teams .nav-link:focus {
+    transform: scale(1.08);
+    box-shadow: 0 3px 10px rgba(0, 128, 0, 0.35);
 }
 
 .text-header {
@@ -507,6 +548,28 @@ img {
     background-color: var(--brand-color);
     color: #ffffff !important;
     padding-left: 18px;
+    box-shadow: 0 4px 12px rgba(0, 128, 0, 0.3);
+}
+
+.mobile-nav-link.highlight-orange {
+    background-color: #ff6b00;
+    color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(255, 107, 0, 0.35);
+}
+
+.mobile-nav-link.highlight-orange:hover,
+.mobile-nav-link.highlight-orange:focus {
+    background-color: #e05d00;
+    color: #ffffff !important;
+    padding-left: 18px;
+    box-shadow: 0 4px 14px rgba(224, 93, 0, 0.5);
+}
+
+.mobile-nav-link.highlight-orange.active {
+    background-color: #d45500 !important;
+    color: #ffffff !important;
+    padding-left: 18px;
+    box-shadow: 0 3px 10px rgba(212, 85, 0, 0.4);
 }
 
 .mobile-nav-group {
@@ -555,6 +618,8 @@ img {
     background: var(--brand-color);
     color: #ffffff !important;
     border-color: var(--brand-color);
+    transform: scale(1.04);
+    box-shadow: 0 3px 8px rgba(0, 128, 0, 0.25);
 }
 
 .mobile-menu-footer {
@@ -689,7 +754,7 @@ img {
 .title-facebook {
     color: var(--brand-color);
     margin-bottom: 20px;
-    font-size: clamp(24px, 4vw, 36px);
+    font-size: clamp(40px, 4vw, 36px);
     line-height: 1.2;
     text-align: center;
     width: 100%;
@@ -1940,6 +2005,7 @@ address {
     }
      section.hero {
         padding-top: 90px;
+        margin-top: -40px;
         padding-bottom: 0px;
         min-height: 60vh;
         display: flex;
