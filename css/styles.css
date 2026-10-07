@@ -672,17 +672,18 @@ img {
 
 /*--------------------------- Hero Section ----------------------*/
 .hero {
-    margin-top: 60px;
+    padding-top: 180px;
+    
     min-height: 85vh;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     background-color: var(--brand-color);
    /*--- background-image: linear-gradient(90deg, rgba(87, 199, 133, 0.3) 0%, rgba(87, 199, 133, 0.3) 50%, rgba(87, 199, 133, 0.3) 100%), */
-    background-image: url(../imgs/back.jpeg);
+   background-image: url(../imgs/back.jpeg);
     background-position: center;
     background-size: contain;
-    background-repeat:no-repeat ;
+    background-repeat: no-repeat;
 }
 
 .hero > .container {
@@ -712,7 +713,7 @@ img {
 .hero-text {
     width: 100%;
     font-weight: 600;
-    font-size: clamp(16px, 2.2vw, 20px);
+    font-size: clamp(16px, 2.2vw, 26px);
     line-height: 1.4;
     letter-spacing: 0.01em;
     color: #2e4d2b;
@@ -754,7 +755,7 @@ img {
 .title-facebook {
     color: var(--brand-color);
     margin-bottom: 20px;
-    font-size: clamp(40px, 4vw, 36px);
+    font-size: clamp(24px, 4vw, 36px);
     line-height: 1.2;
     text-align: center;
     width: 100%;
@@ -858,6 +859,182 @@ img {
     object-fit: contain;
     border-radius: 8px;
     display: block;
+}
+
+/*--------------------------- Running Sponsor Marquee / Ticker ----------------------*/
+.sponsor-ticker-section {
+    position: relative;
+    width: 100%;
+    padding: 16px 0 20px;
+    background: #ffffff;
+    border-top: 1px solid #e2e8e2;
+    border-bottom: 1px solid #e2e8e2;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.sponsor-ticker-footer {
+    margin-top: 40px;
+    background: linear-gradient(180deg, #f3f7f3 0%, #ffffff 100%);
+    border-top: 3px solid var(--brand-color);
+}
+
+.sponsor-ticker-top {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: var(--box-shadow);
+    border: 1px solid rgba(0, 128, 0, 0.18);
+    padding: 14px 0 18px;
+    margin-bottom: 30px;
+}
+
+.ticker-header-wrap {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.ticker-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Noto Sans V2", "Noto Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--brand-color);
+    background-color: #eaf5ea;
+    padding: 4px 16px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 128, 0, 0.2);
+    box-shadow: 0 2px 6px rgba(0, 128, 0, 0.08);
+}
+
+.ticker-badge::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--brand-color);
+    box-shadow: 0 0 8px rgba(0, 128, 0, 0.6);
+}
+
+.sponsor-ticker {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+}
+
+.sponsor-ticker-track {
+    display: flex;
+    width: max-content;
+    -webkit-animation: sponsorMarquee 25s linear infinite !important;
+    animation: sponsorMarquee 25s linear infinite !important;
+    will-change: transform;
+}
+
+.sponsor-ticker:hover .sponsor-ticker-track,
+.sponsor-ticker:focus-within .sponsor-ticker-track {
+    -webkit-animation-play-state: paused !important;
+    animation-play-state: paused !important;
+}
+
+@-webkit-keyframes sponsorMarquee {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+@keyframes sponsorMarquee {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+.sponsor-ticker-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 6px 10px;
+    flex-shrink: 0;
+}
+
+.sponsor-ticker-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 75px;
+    padding: 8px 14px;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e1e7e1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    text-decoration: none;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.sponsor-ticker-card:hover,
+.sponsor-ticker-card:focus {
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 8px 20px rgba(0, 128, 0, 0.2);
+    border-color: var(--brand-color);
+    background-color: #ffffff !important;
+}
+
+.sponsor-ticker-img {
+    max-height: 52px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 4px;
+    display: block;
+}
+
+@media screen and (max-width: 767px) {
+    .sponsor-ticker-section {
+        padding: 12px 0 16px;
+    }
+    .sponsor-ticker-card {
+        width: 135px;
+        height: 60px;
+        padding: 6px 10px;
+        border-radius: 10px;
+    }
+    .sponsor-ticker-img {
+        max-height: 42px;
+    }
+    .sponsor-ticker-group {
+        gap: 14px;
+        padding: 4px 7px;
+    }
+    .sponsor-ticker-track {
+        -webkit-animation-duration: 18s !important;
+        animation-duration: 18s !important;
+    }
+    .ticker-badge {
+        font-size: 11px;
+        padding: 3px 12px;
+    }
 }
 
 /*--------------------------- Sociale / ONLUS Section ----------------------*/
@@ -1091,6 +1268,27 @@ img {
 }
 
 /*--------------------------- Page Headers & Backgrounds ----------------------*/
+.main-page {
+    padding-top: 155px;
+}
+
+.main-page > .tabella-section,
+.main-page > .resultati-section,
+.main-page > .orari-section,
+.main-page > .contact-section,
+.main-page > .pulcini-tems,
+.main-page > .prossime-partite,
+.main-page > .teams-section,
+.main-page > .aboutus-description {
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .main-page {
+        padding-top: 85px;
+    }
+}
+
 .prossime-partite,
 .main-aboutus,
 .orari-section,
@@ -1125,7 +1323,7 @@ img {
     border-radius: 20px;
     box-shadow: var(--box-shadow);
     width: 100%;
-    max-width: 370px;
+    max-width: 480px;
     aspect-ratio: 16 / 10;
     object-fit: cover;
 }
@@ -2134,7 +2332,6 @@ address {
     }
      section.hero {
         padding-top: 90px;
-        margin-top: -40px;
         padding-bottom: 0px;
         min-height: 60vh;
         display: flex;

@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@0;1&family=Faster+One&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="./css/styles.css?v=2">
 </head>
 <body>
     <!--_______________________________________Header___________________________-->
@@ -48,7 +48,7 @@
           <ul class="list nav-items">
             <li class="nav-item"><a class="link nav-link " href="./index.html">HOME</a></li>
             <li class="nav-item"><a class="link nav-link" href="./chi-siamo.html">Chi siamo</a></li>
-            <li class="nav-item"><a class="link nav-link highlight-orange" href="./risultati.html">Calendari/Risultati</a></li>
+             <li class="nav-item"><a class="link nav-link" href="./risultati.html">Calendari/Risultati</a></li>
             <li class="nav-item"><a class="link nav-link" href="./index.html#squadre">Squadre</a>
                </li>
             <li class="nav-item"><a class="link nav-link" href="./eventi.html">Eventi</a></li>
@@ -98,7 +98,6 @@
                     <ul class="mobile-nav-list">
                         <li><a class="mobile-nav-link js-menu-link active" href="./index.html">HOME</a></li>
                         <li><a class="mobile-nav-link js-menu-link" href="./chi-siamo.html">Chi siamo</a></li>
-                        <li><a class="mobile-nav-link js-menu-link highlight-orange" href="./risultati.html">Calendari/Risultati</a></li>
                         <li class="mobile-nav-group">
                             <span class="mobile-nav-group-title">SQUADRE</span>
                             <ul class="mobile-teams-grid">
@@ -112,6 +111,7 @@
                         </li>
                         <li><a class="mobile-nav-link js-menu-link" href="./eventi.html">Eventi</a></li>
                         <li><a class="mobile-nav-link js-menu-link" href="./palestre-e-orari.html">Palestre e Orari</a></li>
+                        <li><a class="mobile-nav-link js-menu-link" href="./risultati.html">Calendari/Risultati</a></li>
                         <li><a class="mobile-nav-link js-menu-link" href="./contatti.html">Contatti</a></li>
                     </ul>
                 </nav>
@@ -137,7 +137,89 @@
                 </div>
             </div>
         </div>
-          <main>
+        <main class="main-page">
+            <!--_____________________________ Sponsor Ticker (Sotto l'Header) _____________________________-->
+            <div class="container">
+                <section class="sponsor-ticker-section sponsor-ticker-top">
+                    <div class="ticker-header-wrap">
+                        <span class="ticker-badge">I Nostri Partner Ufficiali</span>
+                    </div>
+                    <div class="sponsor-ticker" aria-label="I Nostri Sponsor">
+                        <div class="sponsor-ticker-track">
+                            <div class="sponsor-ticker-group">
+                                <a class="sponsor-ticker-card" href="https://www.eugindistilleria.it/" target="_blank" rel="noreferrer noopener" title="Eugin Distilleria">
+                                    <img class="sponsor-ticker-img" loading="lazy" src="./imgs/sponsor/eugin-1.jpg" alt="Eugin Distilleria">
+                                </a>
+                                <a class="sponsor-ticker-card" href="https://www.valsisrl.it/" target="_blank" rel="noreferrer noopener" title="Valsi Srl">
+                                    <img class="sponsor-ticker-img" loading="lazy" src="./imgs/sponsor/cropped-VALSI_logo.jpeg" alt="Valsi Srl">
+                                </a>
+                                <a class="sponsor-ticker-card" href="https://seventeenpub.eatbu.com/?lang=it" target="_blank" rel="noreferrer noopener" title="Seventeen Pub">
+                                    <img class="sponsor-ticker-img" loading="lazy" src="./imgs/sponsor/seventeen-pub-1-300x160.jpg" alt="Seventeen Pub">
+                                </a>
+                                <a class="sponsor-ticker-card" href="https://www.studio-odontikos.it/" target="_blank" rel="noreferrer noopener" title="Studio Odontikos">
+                                    <img class="sponsor-ticker-img" loading="lazy" src="./imgs/sponsor/odontikos-1.jpeg" alt="Studio Odontikos">
+                                </a>
+                                <a class="sponsor-ticker-card" href="https://agenzie.axa.it/caronnopertusella1603" target="_blank" rel="noreferrer noopener" title="LM Assicurazioni AXA">
+                                    <img class="sponsor-ticker-img" loading="lazy" src="./imgs/sponsor/LM-3.jpeg" alt="LM Assicurazioni AXA">
+                                </a>
+                                <a class="sponsor-ticker-card" href="https://www.goccedicolore.net/" target="_blank" rel="noreferrer noopener" title="Gocce di Colore">
+                                    <img class="sponsor-ticker-img" loading="lazy" src="./imgs/sponsor/gocce-di-colore-1-300x156.jpg" alt="Gocce di Colore">
+                                </a>
+                                <a class="sponsor-ticker-card" href="https://www.logopedistagisellafloris.it/" target="_blank" rel="noreferrer noopener" title="Studio Logopedico Gisella Floris">
+                                    <img class="sponsor-ticker-img" loading="lazy" src="./imgs/sponsor/floris-gisella-1.jpeg" alt="Studio Logopedico Gisella Floris">
+                                </a>
+                                <a class="sponsor-ticker-card" href="https://www.af-network.it/" target="_blank" rel="noreferrer noopener" title="AF Network">
+                                    <img class="sponsor-ticker-img" loading="lazy" src="./imgs/sponsor/af-network.jpg" alt="AF Network">
+                                </a>
+                                <a class="sponsor-ticker-card" href="https://www.instagram.com/blackstar_parrucchiere/" target="_blank" rel="noreferrer noopener" title="Blackstar Parrucchiere">
+                                    <img class="sponsor-ticker-img" loading="lazy" src="./imgs/sponsor/blackstar.jpeg" alt="Blackstar Parrucchiere">
+                                </a>
+                                <a class="sponsor-ticker-card" href="https://www.pasticceriavisconti.it/" target="_blank" rel="noreferrer noopener" title="Pasticceria Visconti">
+                                    <img class="sponsor-ticker-img" loading="lazy" src="./imgs/sponsor/visconti.jpg" alt="Pasticceria Visconti">
+                                </a>
+                                <a class="sponsor-ticker-card" href="https://www.facebook.com/PablonatalePC/" target="_blank" rel="noreferrer noopener" title="Maledetto PC">
+                                    <img class="sponsor-ticker-img" loading="lazy" src="./imgs/sponsor/MALEDETTOPC-1-300x150.jpg" alt="Maledetto PC">
+                                </a>
+                            </div>
+                            <div class="sponsor-ticker-group" aria-hidden="true">
+                                <a class="sponsor-ticker-card" href="https://www.eugindistilleria.it/" target="_blank" rel="noreferrer noopener" tabindex="-1">
+                                    <img class="sponsor-ticker-img" loading="lazy" src="./imgs/sponsor/eugin-1.jpg" alt="Eugin Distilleria">
+                                </a>
+                                <a class="sponsor-ticker-card" href="https://www.valsisrl.it/" target="_blank" rel="noreferrer noopener" tabindex="-1">
+                                    <img class="sponsor-ticker-img" loading="lazy" src="./imgs/sponsor/cropped-VALSI_logo.jpeg" alt="Valsi Srl">
+                                </a>
+                                <a class="sponsor-ticker-card" href="https://seventeenpub.eatbu.com/?lang=it" target="_blank" rel="noreferrer noopener" tabindex="-1">
+                                    <img class="sponsor-ticker-img" loading="lazy" src="./imgs/sponsor/seventeen-pub-1-300x160.jpg" alt="Seventeen Pub">
+                                </a>
+                                <a class="sponsor-ticker-card" href="https://www.studio-odontikos.it/" target="_blank" rel="noreferrer noopener" tabindex="-1">
+                                    <img class="sponsor-ticker-img" loading="lazy" src="./imgs/sponsor/odontikos-1.jpeg" alt="Studio Odontikos">
+                                </a>
+                                <a class="sponsor-ticker-card" href="https://agenzie.axa.it/caronnopertusella1603" target="_blank" rel="noreferrer noopener" tabindex="-1">
+                                    <img class="sponsor-ticker-img" loading="lazy" src="./imgs/sponsor/LM-3.jpeg" alt="LM Assicurazioni AXA">
+                                </a>
+                                <a class="sponsor-ticker-card" href="https://www.goccedicolore.net/" target="_blank" rel="noreferrer noopener" tabindex="-1">
+                                    <img class="sponsor-ticker-img" loading="lazy" src="./imgs/sponsor/gocce-di-colore-1-300x156.jpg" alt="Gocce di Colore">
+                                </a>
+                                <a class="sponsor-ticker-card" href="https://www.logopedistagisellafloris.it/" target="_blank" rel="noreferrer noopener" tabindex="-1">
+                                    <img class="sponsor-ticker-img" loading="lazy" src="./imgs/sponsor/floris-gisella-1.jpg" alt="Studio Logopedico Gisella Floris">
+                                </a>
+                                <a class="sponsor-ticker-card" href="https://www.af-network.it/" target="_blank" rel="noreferrer noopener" tabindex="-1">
+                                    <img class="sponsor-ticker-img" loading="lazy" src="./imgs/sponsor/af-network.jpg" alt="AF Network">
+                                </a>
+                                <a class="sponsor-ticker-card" href="https://www.instagram.com/blackstar_parrucchiere/" target="_blank" rel="noreferrer noopener" tabindex="-1">
+                                    <img class="sponsor-ticker-img" loading="lazy" src="./imgs/sponsor/blackstar.jpeg" alt="Blackstar Parrucchiere">
+                                </a>
+                                <a class="sponsor-ticker-card" href="https://www.pasticceriavisconti.it/" target="_blank" rel="noreferrer noopener" tabindex="-1">
+                                    <img class="sponsor-ticker-img" loading="lazy" src="./imgs/sponsor/visconti.jpg" alt="Pasticceria Visconti">
+                                </a>
+                                <a class="sponsor-ticker-card" href="https://www.facebook.com/PablonatalePC/" target="_blank" rel="noreferrer noopener" tabindex="-1">
+                                    <img class="sponsor-ticker-img" loading="lazy" src="./imgs/sponsor/MALEDETTOPC-1-300x150.jpg" alt="Maledetto PC">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
              
                  <!--_____________________________ sezione tabella_______________________________________________-->
             <section class="tabella-section">
@@ -367,7 +449,7 @@
             
                 </div>
             </section>
-           
+
         </main>
         <!--_____________________________ sezione footer_______________________________________________-->
         <footer class="footer-section">
