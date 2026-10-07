@@ -979,8 +979,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
-    height: 75px;
+    width: 270px;
+    height: 150px;
     padding: 8px 14px;
     background: #ffffff;
     border-radius: 12px;
@@ -1001,7 +1001,7 @@ img {
 }
 
 .sponsor-ticker-img {
-    max-height: 52px;
+    
     max-width: 100%;
     width: auto;
     height: auto;
@@ -1015,13 +1015,13 @@ img {
         padding: 12px 0 16px;
     }
     .sponsor-ticker-card {
-        width: 135px;
-        height: 60px;
+        width: 240px;
+        height: 130px;
         padding: 6px 10px;
         border-radius: 10px;
     }
     .sponsor-ticker-img {
-        max-height: 42px;
+        max-height: 130px;
     }
     .sponsor-ticker-group {
         gap: 14px;
