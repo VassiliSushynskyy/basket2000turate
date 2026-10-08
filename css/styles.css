@@ -939,8 +939,7 @@ img {
     will-change: transform;
 }
 
-.sponsor-ticker:hover .sponsor-ticker-track,
-.sponsor-ticker:focus-within .sponsor-ticker-track {
+.sponsor-ticker:hover .sponsor-ticker-track{
     -webkit-animation-play-state: paused !important;
     animation-play-state: paused !important;
 }
