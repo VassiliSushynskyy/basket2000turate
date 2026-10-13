@@ -922,6 +922,29 @@ img {
     box-shadow: 0 0 8px rgba(0, 128, 0, 0.6);
 }
 
+.ticker-footer-wrap {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.ticker-subtext {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-family: "Noto Sans V2", "Noto Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #4b5563;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+
+.ticker-subtext-icon {
+    color: var(--brand-color);
+    flex-shrink: 0;
+}
+
 .sponsor-ticker {
     position: relative;
     width: 100%;
@@ -1033,6 +1056,10 @@ img {
     .ticker-badge {
         font-size: 11px;
         padding: 3px 12px;
+    }
+    .ticker-subtext {
+        font-size: 11px;
+        margin-top: 2px;
     }
 }
 
@@ -1193,16 +1220,17 @@ img {
 .list-squadre {
     font-family: "Faster One", sans-serif;
     letter-spacing: 0.02em;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
     justify-content: center;
-    gap: 30px;
 }
 
 .squadra {
     text-align: center;
     width: 100%;
-    max-width: 540px;
+    max-width: none;
+    display: flex;
 }
 
 .gradient-photo {
@@ -1211,13 +1239,15 @@ img {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: 100%;
     border-radius: 16px;
     overflow: hidden;
-    margin-bottom: 12px;
+    margin-bottom: 0;
     box-shadow: var(--box-shadow);
     background-color: #ffffff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding-bottom: 10px;
+    text-decoration: none;
 }
 
 .gradient-photo:hover,
@@ -1229,6 +1259,7 @@ img {
 
 .gradient-photo img {
     width: 100%;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     display: block;
     border-radius: 16px 16px 0 0;
@@ -1236,12 +1267,15 @@ img {
 }
 
 .team-title {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+    flex-grow: 1;
     color: var(--brand-color);
-    font-size: clamp(20px, 3vw, 32px);
+    font-size: clamp(18px, 2.2vw, 24px);
     line-height: 1.2;
-    padding: 12px 10px 4px;
+    padding: 10px 8px 4px;
     text-align: center;
 }
 
@@ -2280,8 +2314,8 @@ address {
     }
 
     .list-squadre {
-        justify-content: center;
-        gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
     }
 
     .direttivo-list,
@@ -2337,14 +2371,32 @@ address {
         align-items: flex-end;
         justify-content: center;
     }
+    .squadre-container {
+        padding: 20px 12px;
+    }
+
     .list-squadre {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
     }
 
     .squadra img {
-        width: 90%;
+        width: 100%;
         height: auto;
+    }
+
+    .gradient-photo {
+        border-radius: 12px;
+        padding-bottom: 6px;
+    }
+
+    .gradient-photo img {
+        border-radius: 12px 12px 0 0;
+    }
+
+    .team-title {
+        font-size: clamp(13px, 3.6vw, 17px);
+        padding: 8px 4px 4px;
     }
 
     .footer-info {
@@ -2429,4 +2481,27 @@ address {
     .schieda-gioccatore {
         width: 90%;
     }
-}
+
+    .squadre-container {
+        padding: 14px 8px;
+    }
+
+    .list-squadre {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .gradient-photo {
+        border-radius: 10px;
+        padding-bottom: 4px;
+    }
+
+    .gradient-photo img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .team-title {
+        font-size: clamp(11px, 3.2vw, 14px);
+        padding: 6px 2px 2px;
+    }
+}
