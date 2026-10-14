@@ -1356,7 +1356,7 @@ img {
     border-radius: 20px;
     box-shadow: var(--box-shadow);
     width: 100%;
-    max-width: 480px;
+    max-width: 370px;
     aspect-ratio: 16 / 10;
     object-fit: cover;
 }
@@ -2504,4 +2504,4 @@ address {
         font-size: clamp(11px, 3.2vw, 14px);
         padding: 6px 2px 2px;
     }
-}
+}
