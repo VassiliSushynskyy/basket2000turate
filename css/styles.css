@@ -1,4 +1,4 @@
-:root {
+﻿:root {
     --brand-color: rgb(0, 128, 0);
     --second-brand-color: rgb(255, 255, 255);
     --dark-color: #212121;
@@ -1707,7 +1707,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     border-radius: 16px;
     box-shadow: var(--box-shadow);
