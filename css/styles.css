@@ -1042,6 +1042,9 @@ img {
         padding: 6px 10px;
         border-radius: 10px;
     }
+    .sponsor-ticker:hover .sponsor-ticker-track{
+    hover: none;
+}
     .sponsor-ticker-img {
         max-height: 130px;
     }
