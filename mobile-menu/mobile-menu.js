@@ -57,4 +57,14 @@
     if (!e.matches) return;
     closeMenu();
   });
+
+  // Previene il blocco dello scorrimento del banner sponsor dopo il click o tocco
+  document.querySelectorAll('.sponsor-ticker-card').forEach(card => {
+    card.addEventListener('click', () => {
+      card.blur();
+    });
+    card.addEventListener('touchend', () => {
+      setTimeout(() => card.blur(), 80);
+    }, { passive: true });
+  });
 })();

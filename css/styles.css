@@ -1,4 +1,4 @@
-﻿:root {
+:root {
     --brand-color: rgb(0, 128, 0);
     --second-brand-color: rgb(255, 255, 255);
     --dark-color: #212121;
@@ -962,9 +962,17 @@ img {
     will-change: transform;
 }
 
-.sponsor-ticker:hover .sponsor-ticker-track{
-    -webkit-animation-play-state: paused !important;
-    animation-play-state: paused !important;
+@media (hover: hover) and (pointer: fine) {
+    .sponsor-ticker:hover .sponsor-ticker-track {
+        -webkit-animation-play-state: paused;
+        animation-play-state: paused;
+    }
+}
+
+.sponsor-ticker-card:active,
+.sponsor-ticker:active .sponsor-ticker-track {
+    -webkit-animation-play-state: running !important;
+    animation-play-state: running !important;
 }
 
 @-webkit-keyframes sponsorMarquee {
@@ -1998,19 +2006,43 @@ img {
 .tabella-container {
     background-color: rgba(255, 255, 255, 0.92);
     border-radius: 20px;
-    padding: 25px 15px 35px;
+    padding: 25px 20px 35px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.tabella-wrapper {
+    width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.tabella-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+
+.tabella-wrapper::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 4px;
+}
+
+.tabella-wrapper::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+.tabella-wrapper::-webkit-scrollbar-thumb:hover {
+    background: var(--brand-color);
 }
 
 .tabella {
     border-collapse: collapse;
-    width: 100%;
-    min-width: 580px;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-bottom: 30px;
     background-color: #ffffff;
     border-radius: 10px;
     overflow: hidden;
@@ -2034,15 +2066,45 @@ caption .link {
 
 .tabella th,
 .tabella td {
-    padding: 10px 8px;
+    padding: 10px 14px;
     border: 1px solid #d0d0d0;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .tabella thead th {
     background-color: #f0f5f0;
     color: #222222;
     font-weight: 700;
+}
+
+/* Colonne squadre a larghezza del testo */
+.tabella-section .tabella th:first-child,
+.tabella-section .tabella td:first-child,
+.tabella-section .tabella th:nth-child(2),
+.tabella-section .tabella td:nth-child(2) {
+    white-space: nowrap;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.tabella-section .tabella th:nth-child(3),
+.tabella-section .tabella td:nth-child(3) {
+    white-space: nowrap;
+    min-width: 85px;
+}
+
+.tabella-section .tabella th:nth-child(4),
+.tabella-section .tabella td:nth-child(4) {
+    white-space: nowrap;
+    min-width: 55px;
+}
+
+/* Tabella palestre e orari */
+.orari-section .tabella th,
+.orari-section .tabella td {
+    white-space: nowrap;
+    padding-left: 14px;
+    padding-right: 14px;
 }
 
 .tabella-body > tr:hover {
@@ -2430,8 +2492,16 @@ address {
 
     .tabella th,
     .tabella td {
-        padding: 8px 5px;
-        font-size: 13px;
+        padding: 8px 8px;
+        font-size: 14px;
+    }
+
+    .tabella-section .tabella th:first-child,
+    .tabella-section .tabella td:first-child,
+    .tabella-section .tabella th:nth-child(2),
+    .tabella-section .tabella td:nth-child(2) {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .contact-item {
