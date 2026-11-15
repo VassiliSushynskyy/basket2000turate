@@ -67,4 +67,34 @@
       setTimeout(() => card.blur(), 80);
     }, { passive: true });
   });
+
+  // Adatta la larghezza del plugin Facebook su mobile e schermi ridotti
+  const fbIframe = document.querySelector('.news-container iframe');
+  if (fbIframe && fbIframe.src.includes('facebook.com/plugins/page.php')) {
+    const updateFbWidth = () => {
+      const container = fbIframe.parentElement;
+      if (!container) return;
+      const availableWidth = Math.floor(container.clientWidth);
+      if (availableWidth <= 0) return;
+      const targetWidth = Math.max(180, Math.min(500, availableWidth));
+      
+      try {
+        const url = new URL(fbIframe.src);
+        if (url.searchParams.get('width') !== String(targetWidth)) {
+          url.searchParams.set('width', targetWidth);
+          fbIframe.src = url.toString();
+          fbIframe.setAttribute('width', targetWidth);
+        }
+      } catch (e) {
+        // Fallback in caso di URL non parsabile
+      }
+    };
+
+    updateFbWidth();
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(updateFbWidth, 250);
+    });
+  }
 })();
