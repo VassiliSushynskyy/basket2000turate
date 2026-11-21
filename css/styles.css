@@ -1271,7 +1271,7 @@ img {
 
 .gradient-photo img {
     width: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 4 / 3;
     object-fit: cover;
     display: block;
     border-radius: 16px 16px 0 0;
@@ -1367,9 +1367,19 @@ img {
     margin-bottom: 20px;
     border-radius: 20px;
     box-shadow: var(--box-shadow);
+    width: auto;
+    max-width: 480px;
+    overflow: hidden;
+    background-color: #ffffff;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.game img {
+    display: block;
     width: 100%;
-    max-width: 370px;
-    aspect-ratio: 16 / 10;
+    height: auto;
+    border-radius: 20px;
     object-fit: cover;
 }
 
@@ -1395,7 +1405,17 @@ img {
     box-shadow: var(--box-shadow);
     width: 100%;
     max-width: 360px;
-    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background-color: #ffffff;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.foto img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
     object-fit: cover;
 }
 
@@ -1719,7 +1739,8 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    max-width: 50%;
+    width: 100%;
+    max-width: 620px;
     height: auto;
     border-radius: 16px;
     box-shadow: var(--box-shadow);
@@ -2516,6 +2537,47 @@ address {
 
     .safe-pdf-container {
         height: 480px;
+    }
+
+    /* Eventi, Prossime Partite e Galleria ottimizzati per mobile */
+    .img-eventi {
+        max-width: 100%;
+        border-radius: 14px;
+        margin-bottom: 15px;
+    }
+
+    .list-games {
+        gap: 16px;
+    }
+
+    .game {
+        width: 100%;
+        max-width: 480px;
+        margin-bottom: 16px;
+        border-radius: 14px;
+    }
+
+    .game img {
+        width: 100%;
+        height: auto;
+        border-radius: 14px;
+    }
+
+    .galleria {
+        gap: 16px;
+    }
+
+    .foto {
+        width: 100%;
+        max-width: 420px;
+        margin-bottom: 16px;
+        border-radius: 14px;
+    }
+
+    .foto img {
+        width: 100%;
+        height: auto;
+        border-radius: 14px;
     }
 }
 

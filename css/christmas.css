@@ -1,0 +1,325 @@
+/* ==========================================================================
+   TEMA NATALIZIO - BASKET 2000 TURATE
+   ========================================================================== */
+
+:root {
+    --xmas-red: #c9182b;
+    --xmas-red-dark: #960f1e;
+    --xmas-green: #0a7a3b;
+    --xmas-gold: #f4c430;
+    --xmas-gold-light: #fff2a8;
+}
+
+/* --------------------------------------------------------------------------
+   Canvas Neve (Fondo a tutto schermo non invasivo)
+   -------------------------------------------------------------------------- */
+#xmas-snow-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.88;
+}
+
+/* --------------------------------------------------------------------------
+   Pulsante Toggle Neve ON/OFF
+   -------------------------------------------------------------------------- */
+.xmas-toggle-btn {
+    position: fixed;
+    bottom: 22px;
+    right: 22px;
+    z-index: 10001;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.85);
+    background: linear-gradient(135deg, var(--xmas-red) 0%, var(--xmas-red-dark) 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(201, 24, 43, 0.45), 0 2px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
+    padding: 0;
+}
+
+.xmas-toggle-btn:hover {
+    transform: scale(1.1) rotate(15deg);
+    box-shadow: 0 6px 20px rgba(201, 24, 43, 0.6);
+}
+
+.xmas-toggle-btn.is-disabled {
+    opacity: 0.55;
+    filter: grayscale(1);
+    transform: scale(0.95);
+}
+
+/* --------------------------------------------------------------------------
+   Cappellino di Babbo Natale sul Logo Header (Desktop e Mobile)
+   -------------------------------------------------------------------------- */
+.logo-header {
+    position: relative;
+    overflow: visible !important;
+}
+
+.logo-header::before {
+    content: "";
+    position: absolute;
+    top: -24px;
+    left: -14px;
+    width: 82px;
+    height: 72px;
+    background-image: url("../svg/cappello-natale.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 10;
+    transform-origin: bottom center;
+    transform: rotate(-14deg);
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.45));
+    animation: xmasHatBob 3s ease-in-out infinite alternate;
+}
+
+@keyframes xmasHatBob {
+    0% { transform: rotate(-14deg) translateY(0); }
+    100% { transform: rotate(-9deg) translateY(-3px); }
+}
+
+/* Adattamento cappellino su mobile per logo compatto */
+@media screen and (max-width: 768px) {
+    .logo-header::before {
+        top: -14px;
+        left: -8px;
+        width: 48px;
+        height: 42px;
+    }
+}
+
+/* Cappellino su Logo Mobile Menu */
+.mobile-menu-logo {
+    position: relative;
+    overflow: visible !important;
+}
+
+.mobile-menu-logo::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: -8px;
+    width: 46px;
+    height: 40px;
+    background-image: url("../svg/cappello-natale.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 10;
+    transform: rotate(-14deg);
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.4));
+}
+
+/* --------------------------------------------------------------------------
+   Festoni e Luci di Natale lungo l'Header
+   -------------------------------------------------------------------------- */
+.header {
+    border-top: 3px solid var(--xmas-red);
+    box-shadow: 0 4px 20px rgba(201, 24, 43, 0.15), 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Lucine decorative sotto la linea dell'header */
+.header-down {
+    position: relative;
+}
+
+.header-down::after {
+    content: "🎄 ❄ 🎁 🏀 ❄ 🎄";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 13px;
+    letter-spacing: 5px;
+    opacity: 0.85;
+    pointer-events: none;
+}
+
+@media (max-width: 1250px) {
+    .header-down::after {
+        display: none;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Banner Natalizio di Auguri (Visualizzato in Home e nelle pagine)
+   -------------------------------------------------------------------------- */
+.xmas-greeting-banner {
+    position: relative;
+    max-width: 1220px;
+    margin: 20px auto 25px;
+    padding: 16px 24px;
+    background: linear-gradient(135deg, rgba(201, 24, 43, 0.95) 0%, rgba(150, 15, 30, 0.98) 50%, rgba(10, 122, 59, 0.95) 100%);
+    border-radius: 18px;
+    color: #ffffff;
+    box-shadow: 0 10px 25px rgba(201, 24, 43, 0.28), 0 3px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(244, 196, 48, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+}
+
+.xmas-greeting-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, 
+        #f4c430 0%, #ffffff 25%, #f4c430 50%, #ffffff 75%, #f4c430 100%);
+    background-size: 200% auto;
+    animation: xmasShimmer 4s linear infinite;
+}
+
+@keyframes xmasShimmer {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 200% 0%; }
+}
+
+.xmas-banner-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.xmas-banner-icon {
+    font-size: 38px;
+    line-height: 1;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+    animation: xmasSwing 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes xmasSwing {
+    0% { transform: rotate(-8deg); }
+    100% { transform: rotate(8deg); }
+}
+
+.xmas-banner-text h3 {
+    margin: 0 0 5px;
+    font-family: "Noto Sans V2", "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: clamp(18px, 2.4vw, 24px);
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    color: var(--xmas-gold-light);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    text-transform: none;
+    line-height: 1.25;
+}
+
+.xmas-banner-text p {
+    margin: 0;
+    font-family: "Noto Sans V2", "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: clamp(13px, 1.6vw, 15px);
+    color: #ffffff;
+    opacity: 0.98;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.xmas-banner-badge {
+    background: rgba(244, 196, 48, 0.2);
+    border: 1px solid var(--xmas-gold);
+    color: var(--xmas-gold-light);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 13px;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: inset 0 0 10px rgba(244, 196, 48, 0.25);
+}
+
+@media (max-width: 768px) {
+    .xmas-greeting-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 14px 16px;
+        margin: 12px auto 18px;
+        border-radius: 14px;
+    }
+    .xmas-banner-left {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .xmas-banner-icon {
+        font-size: 32px;
+    }
+    .xmas-banner-badge {
+        font-size: 11px;
+        padding: 4px 10px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Accenti Natalizi sulle Schede Squadre
+   -------------------------------------------------------------------------- */
+.squadre-section .squadre-container {
+    border: 2px solid rgba(201, 24, 43, 0.2);
+    box-shadow: 0 8px 30px rgba(201, 24, 43, 0.12);
+}
+
+.gradient-photo {
+    border: 1px solid rgba(201, 24, 43, 0.15);
+}
+
+.gradient-photo:hover {
+    border-color: var(--xmas-red);
+}
+
+/* Fiocco di neve o decoro sopra le card */
+.gradient-photo::after {
+    content: "❄";
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+    opacity: 0.85;
+    pointer-events: none;
+    transition: transform 0.3s ease;
+}
+
+.gradient-photo:hover::after {
+    transform: rotate(45deg) scale(1.2);
+    color: var(--xmas-gold);
+}
+
+/* --------------------------------------------------------------------------
+   Tocco Natalizio sul Footer
+   -------------------------------------------------------------------------- */
+.footer-section {
+    position: relative;
+    border-top: 4px solid var(--xmas-red);
+}
+
+.footer-section::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 0;
+    right: 0;
+    height: 12px;
+    background: radial-gradient(circle at 10px 0, transparent 8px, var(--xmas-red) 9px);
+    background-size: 20px 12px;
+    pointer-events: none;
+    opacity: 0.9;
+}
